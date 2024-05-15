@@ -1,0 +1,903 @@
+
+(env) F:\Lab\nfs\base-notredame>python runner.py 
+2021-11-15 10:05:22.450471: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-15 10:05:23.402700: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+F:\Lab\env\lib\site-packages\tensorflow_addons\utils\ensure_tf_install.py:53: UserWarning: Tensorflow Addons supports using Python ops for all Tensorflow versions above or equal to 2.3.0 and strictly below 2.6.0 (nightly versions are not supported). 
+ The versions of TensorFlow you are currently using is 2.7.0 and is not supported. 
+Some things might work, some things might not.
+If you were to encounter a bug, do not file an issue.
+If you want to make sure you're using a tested and supported configuration, either change the TensorFlow version or the TensorFlow Addons's version. 
+You can find the compatibility matrix in TensorFlow Addon's readme:
+https://github.com/tensorflow/addons
+  warnings.warn(
+WARNING:tensorflow:From F:\Lab\nfs\base-notredame\main.py:20: The name tf.keras.backend.set_session is deprecated. Please use tf.compat.v1.keras.backend.set_session instead.
+
+2021-11-15 10:05:24.080871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+  0%|          | 0/79 [00:00<?, ?it/s]2021-11-15 10:05:44.955252: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8202
+  1%|1         | 1/79 [00:05<06:57,  5.35s/it]  3%|2         | 2/79 [00:06<03:34,  2.78s/it]  4%|3         | 3/79 [00:07<02:29,  1.97s/it]  5%|5         | 4/79 [00:08<01:57,  1.57s/it]  6%|6         | 5/79 [00:09<01:42,  1.39s/it]  8%|7         | 6/79 [00:10<01:30,  1.24s/it]  9%|8         | 7/79 [00:11<01:22,  1.14s/it] 10%|#         | 8/79 [00:12<01:17,  1.10s/it] 11%|#1        | 9/79 [00:13<01:14,  1.06s/it] 13%|#2        | 10/79 [00:14<01:11,  1.04s/it] 14%|#3        | 11/79 [00:15<01:09,  1.02s/it] 15%|#5        | 12/79 [00:16<01:06,  1.01it/s] 16%|#6        | 13/79 [00:17<01:05,  1.00it/s] 18%|#7        | 14/79 [00:18<01:09,  1.07s/it] 19%|#8        | 15/79 [00:19<01:06,  1.04s/it] 20%|##        | 16/79 [00:20<01:04,  1.02s/it] 22%|##1       | 17/79 [00:21<01:02,  1.00s/it] 23%|##2       | 18/79 [00:22<01:01,  1.00s/it] 24%|##4       | 19/79 [00:23<00:59,  1.01it/s] 25%|##5       | 20/79 [00:24<00:56,  1.04it/s] 27%|##6       | 21/79 [00:25<00:55,  1.04it/s] 28%|##7       | 22/79 [00:26<00:55,  1.03it/s] 29%|##9       | 23/79 [00:27<00:54,  1.02it/s] 30%|###       | 24/79 [00:28<00:53,  1.03it/s] 32%|###1      | 25/79 [00:29<00:52,  1.03it/s] 33%|###2      | 26/79 [00:30<00:51,  1.02it/s] 34%|###4      | 27/79 [00:31<00:52,  1.01s/it] 35%|###5      | 28/79 [00:32<00:50,  1.02it/s] 37%|###6      | 29/79 [00:33<00:49,  1.01it/s] 38%|###7      | 30/79 [00:34<00:49,  1.01s/it] 39%|###9      | 31/79 [00:35<00:48,  1.01s/it] 41%|####      | 32/79 [00:36<00:47,  1.01s/it] 42%|####1     | 33/79 [00:37<00:45,  1.01it/s] 43%|####3     | 34/79 [00:38<00:44,  1.01it/s] 44%|####4     | 35/79 [00:39<00:43,  1.01it/s] 46%|####5     | 36/79 [00:40<00:42,  1.01it/s] 47%|####6     | 37/79 [00:40<00:41,  1.01it/s] 48%|####8     | 38/79 [00:41<00:40,  1.02it/s] 49%|####9     | 39/79 [00:42<00:39,  1.03it/s] 51%|#####     | 40/79 [00:43<00:39,  1.00s/it] 52%|#####1    | 41/79 [00:44<00:37,  1.01it/s] 53%|#####3    | 42/79 [00:45<00:36,  1.02it/s] 54%|#####4    | 43/79 [00:46<00:34,  1.03it/s] 56%|#####5    | 44/79 [00:47<00:34,  1.03it/s] 57%|#####6    | 45/79 [00:48<00:33,  1.03it/s] 58%|#####8    | 46/79 [00:49<00:32,  1.02it/s] 59%|#####9    | 47/79 [00:50<00:31,  1.02it/s] 61%|######    | 48/79 [00:51<00:30,  1.02it/s] 62%|######2   | 49/79 [00:52<00:29,  1.03it/s] 63%|######3   | 50/79 [00:53<00:28,  1.03it/s] 65%|######4   | 51/79 [00:54<00:27,  1.03it/s] 66%|######5   | 52/79 [00:55<00:25,  1.04it/s] 67%|######7   | 53/79 [00:56<00:25,  1.02it/s] 68%|######8   | 54/79 [00:57<00:24,  1.03it/s] 70%|######9   | 55/79 [00:58<00:23,  1.02it/s] 71%|#######   | 56/79 [00:59<00:22,  1.04it/s] 72%|#######2  | 57/79 [01:00<00:21,  1.04it/s] 73%|#######3  | 58/79 [01:01<00:20,  1.03it/s] 75%|#######4  | 59/79 [01:02<00:19,  1.03it/s] 76%|#######5  | 60/79 [01:03<00:18,  1.04it/s] 77%|#######7  | 61/79 [01:04<00:17,  1.04it/s] 78%|#######8  | 62/79 [01:05<00:16,  1.02it/s] 80%|#######9  | 63/79 [01:06<00:15,  1.03it/s] 81%|########1 | 64/79 [01:07<00:14,  1.03it/s] 82%|########2 | 65/79 [01:08<00:13,  1.03it/s] 84%|########3 | 66/79 [01:09<00:12,  1.01it/s] 85%|########4 | 67/79 [01:10<00:11,  1.01it/s] 86%|########6 | 68/79 [01:11<00:10,  1.02it/s] 87%|########7 | 69/79 [01:12<00:09,  1.04it/s] 89%|########8 | 70/79 [01:13<00:08,  1.03it/s] 90%|########9 | 71/79 [01:14<00:07,  1.03it/s] 91%|#########1| 72/79 [01:15<00:06,  1.04it/s] 92%|#########2| 73/79 [01:15<00:05,  1.04it/s] 94%|#########3| 74/79 [01:16<00:04,  1.05it/s] 95%|#########4| 75/79 [01:17<00:03,  1.02it/s] 96%|#########6| 76/79 [01:18<00:02,  1.05it/s] 97%|#########7| 77/79 [01:19<00:01,  1.04it/s] 99%|#########8| 78/79 [01:20<00:00,  1.03it/s]100%|##########| 79/79 [01:23<00:00,  1.49s/it]100%|##########| 79/79 [01:23<00:00,  1.06s/it]2021-11-15 10:07:08.999465: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+EfficientNetB4_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\EfficientNetB4_Notredame_band_aug_subject_finetuned_F50M50.36-0.3015.hdf5
+Running... {'run_id': 'EfficientNetB4_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'EfficientNetB4', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\EfficientNetB4_Notredame_band_aug_subject_finetuned_F50M50.36-0.3015.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetb4 (Functional)  (None, 7, 7, 1792)       17673823  
+                                                                 
+ global_average_pooling2d (G  (None, 1792)             0         
+ lobalAveragePooling2D)                                          
+                                                                 
+ dense (Dense)               (None, 1024)              1836032   
+                                                                 
+ batch_normalization (BatchN  (None, 1024)             4096      
+ ormalization)                                                   
+                                                                 
+ dropout (Dropout)           (None, 1024)              0         
+                                                                 
+ activation (Activation)     (None, 1024)              0         
+                                                                 
+ dense_1 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 20,112,551
+Trainable params: 2,436,680
+Non-trainable params: 17,675,871
+_________________________________________________________________
+True
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetb4 (Functional)  (None, 7, 7, 1792)       17673823  
+                                                                 
+ global_average_pooling2d (G  (None, 1792)             0         
+ lobalAveragePooling2D)                                          
+                                                                 
+ dense (Dense)               (None, 1024)              1836032   
+                                                                 
+ batch_normalization (BatchN  (None, 1024)             4096      
+ ormalization)                                                   
+                                                                 
+ dropout (Dropout)           (None, 1024)              0         
+                                                                 
+ activation (Activation)     (None, 1024)              0         
+                                                                 
+ dense_1 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 20,112,551
+Trainable params: 19,985,296
+Non-trainable params: 127,255
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\EfficientNetB4_Notredame_band_aug_subject_finetuned_F50M50.36-0.3015.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06001d1411.png' 95
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06209d1582.png' 156
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06525d664.png' 268
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\05815d1213.png' 67
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06314d1316.png' 179
+Image shape:  (224, 224, 3)
+Label:  95
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetb4_input (Input  [(None, 224, 224, 3)]    0         
+ Layer)                                                          
+                                                                 
+ efficientnetb4 (Functional)  (None, 7, 7, 1792)       17673823  
+                                                                 
+ global_average_pooling2d (G  (None, 1792)             0         
+ lobalAveragePooling2D)                                          
+                                                                 
+ dense (Dense)               (None, 1024)              1836032   
+                                                                 
+ batch_normalization (BatchN  (None, 1024)             4096      
+ ormalization)                                                   
+                                                                 
+ dropout (Dropout)           (None, 1024)              0         
+                                                                 
+ activation (Activation)     (None, 1024)              0         
+                                                                 
+=================================================================
+Total params: 19,513,951
+Trainable params: 19,386,696
+Non-trainable params: 127,255
+_________________________________________________________________
+5000 5000 10000
+DenseNet121_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\DenseNet121_Notredame_band_aug_subject_finetuned_F50M50.77-0.4387.hdf5
+Running... {'run_id': 'DenseNet121_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'DenseNet121', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\DenseNet121_Notredame_band_aug_subject_finetuned_F50M50.77-0.4387.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ densenet121 (Functional)    (None, 7, 7, 1024)        7037504   
+                                                                 
+ global_average_pooling2d_1   (None, 1024)             0         
+  0%|          | 0/79 [00:00<?, ?it/s]  1%|1         | 1/79 [00:03<04:57,  3.82s/it]  3%|2         | 2/79 [00:04<02:43,  2.12s/it]  4%|3         | 3/79 [00:05<02:00,  1.59s/it]  5%|5         | 4/79 [00:06<01:39,  1.33s/it]  6%|6         | 5/79 [00:07<01:27,  1.18s/it]  8%|7         | 6/79 [00:08<01:19,  1.09s/it]  9%|8         | 7/79 [00:09<01:14,  1.03s/it] 10%|#         | 8/79 [00:10<01:11,  1.01s/it] 11%|#1        | 9/79 [00:11<01:06,  1.05it/s] 13%|#2        | 10/79 [00:12<01:04,  1.08it/s] 14%|#3        | 11/79 [00:12<01:01,  1.10it/s] 15%|#5        | 12/79 [00:13<00:59,  1.13it/s] 16%|#6        | 13/79 [00:14<00:58,  1.13it/s] 18%|#7        | 14/79 [00:15<00:58,  1.12it/s] 19%|#8        | 15/79 [00:16<00:56,  1.13it/s] 20%|##        | 16/79 [00:17<00:54,  1.16it/s] 22%|##1       | 17/79 [00:18<00:55,  1.12it/s] 23%|##2       | 18/79 [00:18<00:53,  1.15it/s] 24%|##4       | 19/79 [00:19<00:51,  1.16it/s] 25%|##5       | 20/79 [00:20<00:51,  1.15it/s] 27%|##6       | 21/79 [00:21<00:50,  1.15it/s] 28%|##7       | 22/79 [00:22<00:50,  1.14it/s] 29%|##9       | 23/79 [00:23<00:49,  1.14it/s] 30%|###       | 24/79 [00:24<00:48,  1.13it/s] 32%|###1      | 25/79 [00:25<00:48,  1.12it/s] 33%|###2      | 26/79 [00:26<00:46,  1.13it/s] 34%|###4      | 27/79 [00:26<00:45,  1.15it/s] 35%|###5      | 28/79 [00:27<00:44,  1.15it/s] 37%|###6      | 29/79 [00:28<00:44,  1.13it/s] 38%|###7      | 30/79 [00:29<00:44,  1.09it/s] 39%|###9      | 31/79 [00:30<00:44,  1.08it/s] 41%|####      | 32/79 [00:31<00:43,  1.09it/s] 42%|####1     | 33/79 [00:32<00:42,  1.09it/s] 43%|####3     | 34/79 [00:33<00:41,  1.09it/s] 44%|####4     | 35/79 [00:34<00:39,  1.13it/s] 46%|####5     | 36/79 [00:35<00:37,  1.13it/s] 47%|####6     | 37/79 [00:35<00:37,  1.13it/s] 48%|####8     | 38/79 [00:36<00:35,  1.14it/s] 49%|####9     | 39/79 [00:37<00:36,  1.11it/s] 51%|#####     | 40/79 [00:38<00:35,  1.11it/s] 52%|#####1    | 41/79 [00:39<00:34,  1.09it/s] 53%|#####3    | 42/79 [00:40<00:33,  1.10it/s] 54%|#####4    | 43/79 [00:41<00:33,  1.07it/s] 56%|#####5    | 44/79 [00:42<00:32,  1.06it/s] 57%|#####6    | 45/79 [00:43<00:32,  1.05it/s] 58%|#####8    | 46/79 [00:44<00:31,  1.05it/s] 59%|#####9    | 47/79 [00:45<00:30,  1.04it/s] 61%|######    | 48/79 [00:46<00:29,  1.04it/s] 62%|######2   | 49/79 [00:47<00:28,  1.06it/s] 63%|######3   | 50/79 [00:48<00:27,  1.07it/s] 65%|######4   | 51/79 [00:49<00:26,  1.06it/s] 66%|######5   | 52/79 [00:50<00:25,  1.04it/s] 67%|######7   | 53/79 [00:51<00:24,  1.05it/s] 68%|######8   | 54/79 [00:52<00:24,  1.04it/s] 70%|######9   | 55/79 [00:52<00:22,  1.06it/s] 71%|#######   | 56/79 [00:53<00:21,  1.06it/s] 72%|#######2  | 57/79 [00:54<00:20,  1.06it/s] 73%|#######3  | 58/79 [00:55<00:20,  1.05it/s] 75%|#######4  | 59/79 [00:56<00:19,  1.04it/s] 76%|#######5  | 60/79 [00:57<00:18,  1.04it/s] 77%|#######7  | 61/79 [00:58<00:17,  1.05it/s] 78%|#######8  | 62/79 [00:59<00:16,  1.03it/s] 80%|#######9  | 63/79 [01:00<00:15,  1.05it/s] 81%|########1 | 64/79 [01:01<00:14,  1.03it/s] 82%|########2 | 65/79 [01:02<00:14,  1.00s/it] 84%|########3 | 66/79 [01:03<00:12,  1.00it/s] 85%|########4 | 67/79 [01:04<00:11,  1.00it/s] 86%|########6 | 68/79 [01:05<00:11,  1.02s/it] 87%|########7 | 69/79 [01:06<00:09,  1.01it/s] 89%|########8 | 70/79 [01:07<00:08,  1.01it/s] 90%|########9 | 71/79 [01:08<00:07,  1.02it/s] 91%|#########1| 72/79 [01:09<00:06,  1.00it/s] 92%|#########2| 73/79 [01:10<00:05,  1.01it/s] 94%|#########3| 74/79 [01:11<00:04,  1.02it/s] 95%|#########4| 75/79 [01:12<00:03,  1.03it/s] 96%|#########6| 76/79 [01:13<00:02,  1.02it/s] 97%|#########7| 77/79 [01:14<00:01,  1.03it/s] 99%|#########8| 78/79 [01:15<00:00,  1.01it/s]100%|##########| 79/79 [01:18<00:00,  1.50s/it]100%|##########| 79/79 [01:18<00:00,  1.01it/s]2021-11-15 10:08:47.501820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_2 (Dense)             (None, 1024)              1049600   
+                                                                 
+ batch_normalization_1 (Batc  (None, 1024)             4096      
+ hNormalization)                                                 
+                                                                 
+ dropout_1 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_1 (Activation)   (None, 1024)              0         
+                                                                 
+ dense_3 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 8,689,800
+Trainable params: 1,650,248
+Non-trainable params: 7,039,552
+_________________________________________________________________
+True
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ densenet121 (Functional)    (None, 7, 7, 1024)        7037504   
+                                                                 
+ global_average_pooling2d_1   (None, 1024)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_2 (Dense)             (None, 1024)              1049600   
+                                                                 
+ batch_normalization_1 (Batc  (None, 1024)             4096      
+ hNormalization)                                                 
+                                                                 
+ dropout_1 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_1 (Activation)   (None, 1024)              0         
+                                                                 
+ dense_3 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 8,689,800
+Trainable params: 8,604,104
+Non-trainable params: 85,696
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\DenseNet121_Notredame_band_aug_subject_finetuned_F50M50.77-0.4387.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06808d213.png' 398
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06314d974.png' 179
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06737d325.png' 328
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06387d673.png' 217
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06796d821.png' 386
+Image shape:  (224, 224, 3)
+Label:  398
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ densenet121_input (InputLay  [(None, 224, 224, 3)]    0         
+ er)                                                             
+                                                                 
+ densenet121 (Functional)    (None, 7, 7, 1024)        7037504   
+                                                                 
+ global_average_pooling2d_1   (None, 1024)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_2 (Dense)             (None, 1024)              1049600   
+                                                                 
+ batch_normalization_1 (Batc  (None, 1024)             4096      
+ hNormalization)                                                 
+                                                                 
+ dropout_1 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_1 (Activation)   (None, 1024)              0         
+                                                                 
+=================================================================
+Total params: 8,091,200
+Trainable params: 8,005,504
+Non-trainable params: 85,696
+_________________________________________________________________
+5000 5000 10000
+MobileNetV2_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\MobileNetV2_Notredame_band_aug_subject_finetuned_F50M50.92-0.5260.hdf5
+Running... {'run_id': 'MobileNetV2_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'MobileNetV2', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\MobileNetV2_Notredame_band_aug_subject_finetuned_F50M50.92-0.5260.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ mobilenetv2_1.00_224 (Funct  (None, 7, 7, 1280)       2257984   
+ ional)                                                          
+                                                                 
+ global_average_pooling2d_2   (None, 1280)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_4 (Dense)             (None, 1024)              1311744   
+                                                                 
+ batch_normalization_2 (Batc  (None, 1024)             4096      
+ hNormalization)                                                 
+                                                                 
+ dropout_2 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_2 (Activation)   (None, 1024)              0         
+                                                                 
+ dense_5 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 4,172,424
+Trainable params: 1,912,392
+Non-trainable params: 2,260,032
+_________________________________________________________________
+True
+Model: "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ mobilenetv2_1.00_224 (Funct  (None, 7, 7, 1280)       2257984   
+ ional)                                                          
+                                                                 
+ global_average_pooling2d_2   (None, 1280)             0         
+ (GlobalAveragePooling2D)                                        
+  0%|          | 0/79 [00:00<?, ?it/s]  1%|1         | 1/79 [00:01<02:15,  1.74s/it]  3%|2         | 2/79 [00:02<01:15,  1.02it/s]  4%|3         | 3/79 [00:02<00:55,  1.37it/s]  5%|5         | 4/79 [00:03<00:47,  1.57it/s]  6%|6         | 5/79 [00:03<00:43,  1.69it/s]  8%|7         | 6/79 [00:04<00:39,  1.83it/s]  9%|8         | 7/79 [00:04<00:36,  1.98it/s] 10%|#         | 8/79 [00:04<00:35,  2.03it/s] 11%|#1        | 9/79 [00:05<00:34,  2.02it/s] 13%|#2        | 10/79 [00:05<00:32,  2.11it/s] 14%|#3        | 11/79 [00:06<00:32,  2.11it/s] 15%|#5        | 12/79 [00:06<00:32,  2.09it/s] 16%|#6        | 13/79 [00:07<00:32,  2.05it/s] 18%|#7        | 14/79 [00:07<00:30,  2.11it/s] 19%|#8        | 15/79 [00:08<00:29,  2.18it/s] 20%|##        | 16/79 [00:08<00:27,  2.32it/s] 22%|##1       | 17/79 [00:09<00:26,  2.31it/s] 23%|##2       | 18/79 [00:09<00:27,  2.20it/s] 24%|##4       | 19/79 [00:09<00:25,  2.31it/s] 25%|##5       | 20/79 [00:10<00:25,  2.31it/s] 27%|##6       | 21/79 [00:10<00:25,  2.25it/s] 28%|##7       | 22/79 [00:11<00:25,  2.23it/s] 29%|##9       | 23/79 [00:11<00:23,  2.34it/s] 30%|###       | 24/79 [00:12<00:24,  2.24it/s] 32%|###1      | 25/79 [00:12<00:23,  2.29it/s] 33%|###2      | 26/79 [00:13<00:23,  2.26it/s] 34%|###4      | 27/79 [00:13<00:24,  2.15it/s] 35%|###5      | 28/79 [00:13<00:23,  2.18it/s] 37%|###6      | 29/79 [00:14<00:23,  2.13it/s] 38%|###7      | 30/79 [00:14<00:22,  2.15it/s] 39%|###9      | 31/79 [00:15<00:23,  2.05it/s] 41%|####      | 32/79 [00:15<00:22,  2.09it/s] 42%|####1     | 33/79 [00:16<00:22,  2.05it/s] 43%|####3     | 34/79 [00:16<00:21,  2.05it/s] 44%|####4     | 35/79 [00:17<00:22,  1.96it/s] 46%|####5     | 36/79 [00:17<00:21,  2.02it/s] 47%|####6     | 37/79 [00:18<00:20,  2.06it/s] 48%|####8     | 38/79 [00:18<00:19,  2.06it/s] 49%|####9     | 39/79 [00:19<00:19,  2.09it/s] 51%|#####     | 40/79 [00:19<00:19,  1.99it/s] 52%|#####1    | 41/79 [00:20<00:19,  1.97it/s] 53%|#####3    | 42/79 [00:20<00:18,  2.05it/s] 54%|#####4    | 43/79 [00:21<00:16,  2.15it/s] 56%|#####5    | 44/79 [00:21<00:16,  2.07it/s] 57%|#####6    | 45/79 [00:22<00:16,  2.04it/s] 58%|#####8    | 46/79 [00:22<00:16,  2.04it/s] 59%|#####9    | 47/79 [00:23<00:16,  2.00it/s] 61%|######    | 48/79 [00:23<00:16,  1.92it/s] 62%|######2   | 49/79 [00:24<00:15,  1.98it/s] 63%|######3   | 50/79 [00:24<00:14,  2.00it/s] 65%|######4   | 51/79 [00:25<00:14,  1.95it/s] 66%|######5   | 52/79 [00:25<00:13,  1.97it/s] 67%|######7   | 53/79 [00:26<00:13,  1.95it/s] 68%|######8   | 54/79 [00:26<00:12,  2.02it/s] 70%|######9   | 55/79 [00:27<00:11,  2.04it/s] 71%|#######   | 56/79 [00:27<00:11,  1.98it/s] 72%|#######2  | 57/79 [00:28<00:11,  1.87it/s] 73%|#######3  | 58/79 [00:28<00:10,  1.95it/s] 75%|#######4  | 59/79 [00:29<00:10,  1.97it/s] 76%|#######5  | 60/79 [00:30<00:09,  1.90it/s] 77%|#######7  | 61/79 [00:30<00:09,  1.88it/s] 78%|#######8  | 62/79 [00:31<00:08,  1.93it/s] 80%|#######9  | 63/79 [00:31<00:08,  1.97it/s] 81%|########1 | 64/79 [00:32<00:07,  2.00it/s] 82%|########2 | 65/79 [00:32<00:07,  1.95it/s] 84%|########3 | 66/79 [00:33<00:06,  1.93it/s] 85%|########4 | 67/79 [00:33<00:06,  1.99it/s] 86%|########6 | 68/79 [00:34<00:05,  2.08it/s] 87%|########7 | 69/79 [00:34<00:04,  2.01it/s] 89%|########8 | 70/79 [00:35<00:04,  1.97it/s] 90%|########9 | 71/79 [00:35<00:04,  1.98it/s] 91%|#########1| 72/79 [00:36<00:03,  2.03it/s] 92%|#########2| 73/79 [00:36<00:03,  1.99it/s] 94%|#########3| 74/79 [00:37<00:02,  2.07it/s] 95%|#########4| 75/79 [00:37<00:02,  1.97it/s] 96%|#########6| 76/79 [00:38<00:01,  2.00it/s] 97%|#########7| 77/79 [00:38<00:00,  2.00it/s] 99%|#########8| 78/79 [00:39<00:00,  2.01it/s]100%|##########| 79/79 [00:40<00:00,  1.48it/s]100%|##########| 79/79 [00:40<00:00,  1.97it/s]2021-11-15 10:09:49.165564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+
+                                                                 
+ dense_4 (Dense)             (None, 1024)              1311744   
+                                                                 
+ batch_normalization_2 (Batc  (None, 1024)             4096      
+ hNormalization)                                                 
+                                                                 
+ dropout_2 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_2 (Activation)   (None, 1024)              0         
+                                                                 
+ dense_5 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 4,172,424
+Trainable params: 4,136,264
+Non-trainable params: 36,160
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\MobileNetV2_Notredame_band_aug_subject_finetuned_F50M50.92-0.5260.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\05954d1223.png' 88
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06246d1214.png' 165
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06726d406.png' 324
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06051d1531.png' 112
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06427d1332.png' 233
+Image shape:  (224, 224, 3)
+Label:  88
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ mobilenetv2_1.00_224_input   [(None, 224, 224, 3)]    0         
+ (InputLayer)                                                    
+                                                                 
+ mobilenetv2_1.00_224 (Funct  (None, 7, 7, 1280)       2257984   
+ ional)                                                          
+                                                                 
+ global_average_pooling2d_2   (None, 1280)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_4 (Dense)             (None, 1024)              1311744   
+                                                                 
+ batch_normalization_2 (Batc  (None, 1024)             4096      
+ hNormalization)                                                 
+                                                                 
+ dropout_2 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_2 (Activation)   (None, 1024)              0         
+                                                                 
+=================================================================
+Total params: 3,573,824
+Trainable params: 3,537,664
+Non-trainable params: 36,160
+_________________________________________________________________
+5000 5000 10000
+InceptionV3_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\InceptionV3_Notredame_band_aug_subject_finetuned_F50M50.90-0.4759.hdf5
+Running... {'run_id': 'InceptionV3_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'InceptionV3', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\InceptionV3_Notredame_band_aug_subject_finetuned_F50M50.90-0.4759.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inception_v3 (Functional)   (None, 5, 5, 2048)        21802784  
+                                                                 
+ global_average_pooling2d_3   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_6 (Dense)             (None, 1024)              2098176   
+                                                                 
+ batch_normalization_97 (Bat  (None, 1024)             4096      
+ chNormalization)                                                
+                                                                 
+ dropout_3 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_97 (Activation)  (None, 1024)              0         
+                                                                 
+ dense_7 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 24,503,656
+Trainable params: 2,698,824
+Non-trainable params: 21,804,832
+_________________________________________________________________
+True
+Model: "sequential_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inception_v3 (Functional)   (None, 5, 5, 2048)        21802784  
+                                                                 
+ global_average_pooling2d_3   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_6 (Dense)             (None, 1024)              2098176   
+                                                                 
+ batch_normalization_97 (Bat  (None, 1024)             4096      
+ chNormalization)                                                
+                                                                 
+ dropout_3 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_97 (Activation)  (None, 1024)              0         
+                                                                 
+ dense_7 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 24,503,656
+Trainable params: 24,467,176
+Non-trainable params: 36,480
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\InceptionV3_Notredame_band_aug_subject_finetuned_F50M50.90-0.4759.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06947d52.png' 535
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06839d214.png' 429
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06889d13.png' 479
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06488d617.png' 250
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06919d24.png' 507
+Image shape:  (224, 224, 3)
+Label:  535
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+  0%|          | 0/79 [00:00<?, ?it/s]  1%|1         | 1/79 [00:02<03:38,  2.80s/it]  3%|2         | 2/79 [00:03<01:57,  1.53s/it]  4%|3         | 3/79 [00:04<01:25,  1.13s/it]  5%|5         | 4/79 [00:04<01:09,  1.07it/s]  6%|6         | 5/79 [00:05<01:00,  1.21it/s]  8%|7         | 6/79 [00:06<00:58,  1.25it/s]  9%|8         | 7/79 [00:06<00:53,  1.34it/s] 10%|#         | 8/79 [00:07<00:50,  1.39it/s] 11%|#1        | 9/79 [00:08<00:49,  1.41it/s] 13%|#2        | 10/79 [00:08<00:49,  1.41it/s] 14%|#3        | 11/79 [00:09<00:46,  1.46it/s] 15%|#5        | 12/79 [00:10<00:46,  1.43it/s] 16%|#6        | 13/79 [00:10<00:47,  1.40it/s] 18%|#7        | 14/79 [00:11<00:45,  1.44it/s] 19%|#8        | 15/79 [00:12<00:44,  1.43it/s] 20%|##        | 16/79 [00:12<00:42,  1.47it/s] 22%|##1       | 17/79 [00:13<00:40,  1.53it/s] 23%|##2       | 18/79 [00:14<00:41,  1.47it/s] 24%|##4       | 19/79 [00:15<00:42,  1.41it/s] 25%|##5       | 20/79 [00:15<00:40,  1.46it/s] 27%|##6       | 21/79 [00:16<00:39,  1.49it/s] 28%|##7       | 22/79 [00:17<00:39,  1.44it/s] 29%|##9       | 23/79 [00:17<00:39,  1.42it/s] 30%|###       | 24/79 [00:18<00:38,  1.44it/s] 32%|###1      | 25/79 [00:19<00:37,  1.46it/s] 33%|###2      | 26/79 [00:19<00:36,  1.44it/s] 34%|###4      | 27/79 [00:20<00:35,  1.47it/s] 35%|###5      | 28/79 [00:21<00:37,  1.36it/s] 37%|###6      | 29/79 [00:22<00:36,  1.37it/s] 38%|###7      | 30/79 [00:22<00:35,  1.39it/s] 39%|###9      | 31/79 [00:23<00:34,  1.38it/s] 41%|####      | 32/79 [00:24<00:35,  1.34it/s] 42%|####1     | 33/79 [00:25<00:35,  1.31it/s] 43%|####3     | 34/79 [00:25<00:33,  1.34it/s] 44%|####4     | 35/79 [00:26<00:32,  1.35it/s] 46%|####5     | 36/79 [00:27<00:31,  1.35it/s] 47%|####6     | 37/79 [00:28<00:32,  1.29it/s] 48%|####8     | 38/79 [00:28<00:31,  1.31it/s] 49%|####9     | 39/79 [00:29<00:30,  1.32it/s] 51%|#####     | 40/79 [00:30<00:29,  1.33it/s] 52%|#####1    | 41/79 [00:31<00:29,  1.29it/s] 53%|#####3    | 42/79 [00:31<00:28,  1.29it/s] 54%|#####4    | 43/79 [00:32<00:27,  1.33it/s] 56%|#####5    | 44/79 [00:33<00:26,  1.32it/s] 57%|#####6    | 45/79 [00:34<00:25,  1.34it/s] 58%|#####8    | 46/79 [00:34<00:24,  1.32it/s] 59%|#####9    | 47/79 [00:35<00:24,  1.32it/s] 61%|######    | 48/79 [00:36<00:23,  1.31it/s] 62%|######2   | 49/79 [00:37<00:22,  1.34it/s] 63%|######3   | 50/79 [00:37<00:22,  1.31it/s] 65%|######4   | 51/79 [00:38<00:21,  1.33it/s] 66%|######5   | 52/79 [00:39<00:20,  1.32it/s] 67%|######7   | 53/79 [00:40<00:19,  1.32it/s] 68%|######8   | 54/79 [00:41<00:19,  1.26it/s] 70%|######9   | 55/79 [00:41<00:18,  1.29it/s] 71%|#######   | 56/79 [00:42<00:17,  1.31it/s] 72%|#######2  | 57/79 [00:43<00:16,  1.31it/s] 73%|#######3  | 58/79 [00:44<00:16,  1.29it/s] 75%|#######4  | 59/79 [00:44<00:15,  1.28it/s] 76%|#######5  | 60/79 [00:45<00:14,  1.29it/s] 77%|#######7  | 61/79 [00:46<00:13,  1.30it/s] 78%|#######8  | 62/79 [00:47<00:12,  1.31it/s] 80%|#######9  | 63/79 [00:47<00:12,  1.28it/s] 81%|########1 | 64/79 [00:48<00:11,  1.32it/s] 82%|########2 | 65/79 [00:49<00:10,  1.32it/s] 84%|########3 | 66/79 [00:50<00:09,  1.33it/s] 85%|########4 | 67/79 [00:50<00:09,  1.30it/s] 86%|########6 | 68/79 [00:51<00:08,  1.32it/s] 87%|########7 | 69/79 [00:52<00:07,  1.33it/s] 89%|########8 | 70/79 [00:53<00:06,  1.36it/s] 90%|########9 | 71/79 [00:53<00:05,  1.34it/s] 91%|#########1| 72/79 [00:54<00:05,  1.37it/s] 92%|#########2| 73/79 [00:55<00:04,  1.36it/s] 94%|#########3| 74/79 [00:56<00:03,  1.37it/s] 95%|#########4| 75/79 [00:56<00:03,  1.32it/s] 96%|#########6| 76/79 [00:57<00:02,  1.30it/s] 97%|#########7| 77/79 [00:58<00:01,  1.30it/s] 99%|#########8| 78/79 [00:59<00:00,  1.28it/s]100%|##########| 79/79 [01:01<00:00,  1.17s/it]100%|##########| 79/79 [01:01<00:00,  1.29it/s]2021-11-15 10:11:08.499517: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+
+Model: "model_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inception_v3_input (InputLa  [(None, 224, 224, 3)]    0         
+ yer)                                                            
+                                                                 
+ inception_v3 (Functional)   (None, 5, 5, 2048)        21802784  
+                                                                 
+ global_average_pooling2d_3   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_6 (Dense)             (None, 1024)              2098176   
+                                                                 
+ batch_normalization_97 (Bat  (None, 1024)             4096      
+ chNormalization)                                                
+                                                                 
+ dropout_3 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_97 (Activation)  (None, 1024)              0         
+                                                                 
+=================================================================
+Total params: 23,905,056
+Trainable params: 23,868,576
+Non-trainable params: 36,480
+_________________________________________________________________
+5000 5000 10000
+InceptionResNetV2_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\InceptionResNetV2_Notredame_band_aug_subject_finetuned_F50M50.29-0.5409.hdf5
+Running... {'run_id': 'InceptionResNetV2_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'InceptionResNetV2', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\InceptionResNetV2_Notredame_band_aug_subject_finetuned_F50M50.29-0.5409.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inception_resnet_v2 (Functi  (None, 5, 5, 1536)       54336736  
+ onal)                                                           
+                                                                 
+ global_average_pooling2d_4   (None, 1536)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_8 (Dense)             (None, 1024)              1573888   
+                                                                 
+ batch_normalization_301 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_4 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_301 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_9 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 56,513,320
+Trainable params: 2,174,536
+Non-trainable params: 54,338,784
+_________________________________________________________________
+True
+Model: "sequential_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inception_resnet_v2 (Functi  (None, 5, 5, 1536)       54336736  
+ onal)                                                           
+                                                                 
+ global_average_pooling2d_4   (None, 1536)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_8 (Dense)             (None, 1024)              1573888   
+                                                                 
+ batch_normalization_301 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_4 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_301 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_9 (Dense)             (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 56,513,320
+Trainable params: 56,450,728
+Non-trainable params: 62,592
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\InceptionResNetV2_Notredame_band_aug_subject_finetuned_F50M50.29-0.5409.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06781d72.png' 371
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06291d701.png' 172
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06775d83.png' 365
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06456d671.png' 242
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06257d686.png' 168
+Image shape:  (224, 224, 3)
+Label:  371
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+Model: "model_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inception_resnet_v2_input (  [(None, 224, 224, 3)]    0         
+ InputLayer)                                                     
+                                                                 
+ inception_resnet_v2 (Functi  (None, 5, 5, 1536)       54336736  
+ onal)                                                           
+                                                                 
+ global_average_pooling2d_4   (None, 1536)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_8 (Dense)             (None, 1024)              1573888   
+                                                                 
+ batch_normalization_301 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_4 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_301 (Activation)  (None, 1024)             0         
+                                                                 
+=================================================================
+Total params: 55,914,720
+  0%|          | 0/79 [00:00<?, ?it/s]  1%|1         | 1/79 [00:05<06:41,  5.14s/it]  3%|2         | 2/79 [00:06<03:48,  2.97s/it]  4%|3         | 3/79 [00:07<02:47,  2.20s/it]  5%|5         | 4/79 [00:09<02:19,  1.87s/it]  6%|6         | 5/79 [00:10<02:05,  1.69s/it]  8%|7         | 6/79 [00:11<01:54,  1.57s/it]  9%|8         | 7/79 [00:13<01:45,  1.46s/it] 10%|#         | 8/79 [00:14<01:41,  1.43s/it] 11%|#1        | 9/79 [00:15<01:37,  1.40s/it] 13%|#2        | 10/79 [00:17<01:34,  1.37s/it] 14%|#3        | 11/79 [00:18<01:32,  1.36s/it] 15%|#5        | 12/79 [00:19<01:31,  1.37s/it] 16%|#6        | 13/79 [00:21<01:29,  1.35s/it] 18%|#7        | 14/79 [00:22<01:27,  1.35s/it] 19%|#8        | 15/79 [00:23<01:25,  1.34s/it] 20%|##        | 16/79 [00:25<01:22,  1.31s/it] 22%|##1       | 17/79 [00:26<01:24,  1.36s/it] 23%|##2       | 18/79 [00:27<01:20,  1.33s/it] 24%|##4       | 19/79 [00:29<01:20,  1.34s/it] 25%|##5       | 20/79 [00:30<01:17,  1.32s/it] 27%|##6       | 21/79 [00:31<01:17,  1.33s/it] 28%|##7       | 22/79 [00:33<01:16,  1.34s/it] 29%|##9       | 23/79 [00:34<01:15,  1.35s/it] 30%|###       | 24/79 [00:35<01:13,  1.34s/it] 32%|###1      | 25/79 [00:37<01:13,  1.35s/it] 33%|###2      | 26/79 [00:38<01:10,  1.33s/it] 34%|###4      | 27/79 [00:39<01:10,  1.36s/it] 35%|###5      | 28/79 [00:41<01:09,  1.36s/it] 37%|###6      | 29/79 [00:42<01:08,  1.37s/it] 38%|###7      | 30/79 [00:44<01:08,  1.39s/it] 39%|###9      | 31/79 [00:45<01:07,  1.40s/it] 41%|####      | 32/79 [00:47<01:07,  1.43s/it] 42%|####1     | 33/79 [00:48<01:05,  1.41s/it] 43%|####3     | 34/79 [00:49<01:04,  1.44s/it] 44%|####4     | 35/79 [00:51<01:03,  1.44s/it] 46%|####5     | 36/79 [00:52<01:01,  1.43s/it] 47%|####6     | 37/79 [00:54<00:59,  1.42s/it] 48%|####8     | 38/79 [00:55<00:58,  1.42s/it] 49%|####9     | 39/79 [00:57<00:57,  1.43s/it] 51%|#####     | 40/79 [00:58<00:55,  1.43s/it] 52%|#####1    | 41/79 [01:00<00:54,  1.44s/it] 53%|#####3    | 42/79 [01:01<00:53,  1.44s/it] 54%|#####4    | 43/79 [01:02<00:52,  1.45s/it] 56%|#####5    | 44/79 [01:04<00:50,  1.45s/it] 57%|#####6    | 45/79 [01:05<00:49,  1.45s/it] 58%|#####8    | 46/79 [01:07<00:48,  1.46s/it] 59%|#####9    | 47/79 [01:08<00:45,  1.43s/it] 61%|######    | 48/79 [01:10<00:44,  1.42s/it] 62%|######2   | 49/79 [01:11<00:43,  1.44s/it] 63%|######3   | 50/79 [01:13<00:42,  1.45s/it] 65%|######4   | 51/79 [01:14<00:40,  1.46s/it] 66%|######5   | 52/79 [01:15<00:38,  1.43s/it] 67%|######7   | 53/79 [01:17<00:37,  1.44s/it] 68%|######8   | 54/79 [01:18<00:36,  1.45s/it] 70%|######9   | 55/79 [01:20<00:34,  1.45s/it] 71%|#######   | 56/79 [01:21<00:33,  1.46s/it] 72%|#######2  | 57/79 [01:23<00:32,  1.46s/it] 73%|#######3  | 58/79 [01:24<00:30,  1.46s/it] 75%|#######4  | 59/79 [01:26<00:28,  1.44s/it] 76%|#######5  | 60/79 [01:27<00:27,  1.44s/it] 77%|#######7  | 61/79 [01:28<00:25,  1.44s/it] 78%|#######8  | 62/79 [01:30<00:24,  1.45s/it] 80%|#######9  | 63/79 [01:31<00:23,  1.45s/it] 81%|########1 | 64/79 [01:33<00:21,  1.47s/it] 82%|########2 | 65/79 [01:34<00:20,  1.47s/it] 84%|########3 | 66/79 [01:36<00:19,  1.47s/it] 85%|########4 | 67/79 [01:37<00:17,  1.49s/it] 86%|########6 | 68/79 [01:39<00:16,  1.48s/it] 87%|########7 | 69/79 [01:40<00:14,  1.48s/it] 89%|########8 | 70/79 [01:42<00:13,  1.48s/it] 90%|########9 | 71/79 [01:43<00:11,  1.49s/it] 91%|#########1| 72/79 [01:45<00:10,  1.48s/it] 92%|#########2| 73/79 [01:46<00:08,  1.47s/it] 94%|#########3| 74/79 [01:48<00:07,  1.47s/it] 95%|#########4| 75/79 [01:49<00:05,  1.48s/it] 96%|#########6| 76/79 [01:51<00:04,  1.47s/it] 97%|#########7| 77/79 [01:52<00:02,  1.48s/it] 99%|#########8| 78/79 [01:54<00:01,  1.47s/it]100%|##########| 79/79 [01:57<00:00,  2.16s/it]100%|##########| 79/79 [01:57<00:00,  1.49s/it]2021-11-15 10:13:31.417925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+
+  0%|          | 0/79 [00:00<?, ?it/s]  1%|1         | 1/79 [00:02<02:38,  2.03s/it]  3%|2         | 2/79 [00:02<01:28,  1.15s/it]  4%|3         | 3/79 [00:03<01:06,  1.14it/s]  5%|5         | 4/79 [00:03<00:56,  1.32it/s]  6%|6         | 5/79 [00:04<00:49,  1.48it/s]  8%|7         | 6/79 [00:04<00:45,  1.59it/s]  9%|8         | 7/79 [00:05<00:43,  1.67it/s] 10%|#         | 8/79 [00:05<00:41,  1.70it/s] 11%|#1        | 9/79 [00:06<00:41,  1.71it/s] 13%|#2        | 10/79 [00:07<00:40,  1.72it/s] 14%|#3        | 11/79 [00:07<00:38,  1.74it/s] 15%|#5        | 12/79 [00:08<00:38,  1.75it/s] 16%|#6        | 13/79 [00:08<00:38,  1.73it/s] 18%|#7        | 14/79 [00:09<00:37,  1.73it/s] 19%|#8        | 15/79 [00:09<00:37,  1.72it/s] 20%|##        | 16/79 [00:10<00:36,  1.75it/s] 22%|##1       | 17/79 [00:11<00:36,  1.71it/s] 23%|##2       | 18/79 [00:11<00:35,  1.74it/s] 24%|##4       | 19/79 [00:12<00:33,  1.79it/s] 25%|##5       | 20/79 [00:12<00:32,  1.81it/s] 27%|##6       | 21/79 [00:13<00:32,  1.78it/s] 28%|##7       | 22/79 [00:13<00:31,  1.81it/s] 29%|##9       | 23/79 [00:14<00:30,  1.85it/s] 30%|###       | 24/79 [00:14<00:29,  1.85it/s] 32%|###1      | 25/79 [00:15<00:29,  1.82it/s] 33%|###2      | 26/79 [00:16<00:31,  1.71it/s] 34%|###4      | 27/79 [00:16<00:29,  1.74it/s] 35%|###5      | 28/79 [00:17<00:29,  1.74it/s] 37%|###6      | 29/79 [00:17<00:28,  1.75it/s] 38%|###7      | 30/79 [00:18<00:28,  1.70it/s] 39%|###9      | 31/79 [00:18<00:28,  1.70it/s] 41%|####      | 32/79 [00:19<00:27,  1.72it/s] 42%|####1     | 33/79 [00:20<00:26,  1.74it/s] 43%|####3     | 34/79 [00:20<00:26,  1.69it/s] 44%|####4     | 35/79 [00:21<00:26,  1.68it/s] 46%|####5     | 36/79 [00:21<00:25,  1.67it/s] 47%|####6     | 37/79 [00:22<00:25,  1.66it/s] 48%|####8     | 38/79 [00:23<00:24,  1.67it/s] 49%|####9     | 39/79 [00:23<00:24,  1.61it/s] 51%|#####     | 40/79 [00:24<00:24,  1.60it/s] 52%|#####1    | 41/79 [00:25<00:23,  1.61it/s] 53%|#####3    | 42/79 [00:25<00:23,  1.60it/s] 54%|#####4    | 43/79 [00:26<00:23,  1.56it/s] 56%|#####5    | 44/79 [00:27<00:22,  1.55it/s] 57%|#####6    | 45/79 [00:27<00:21,  1.57it/s] 58%|#####8    | 46/79 [00:28<00:20,  1.58it/s] 59%|#####9    | 47/79 [00:28<00:20,  1.55it/s] 61%|######    | 48/79 [00:29<00:20,  1.54it/s] 62%|######2   | 49/79 [00:30<00:18,  1.60it/s] 63%|######3   | 50/79 [00:30<00:17,  1.62it/s] 65%|######4   | 51/79 [00:31<00:17,  1.61it/s] 66%|######5   | 52/79 [00:32<00:17,  1.55it/s] 67%|######7   | 53/79 [00:32<00:16,  1.54it/s] 68%|######8   | 54/79 [00:33<00:16,  1.54it/s] 70%|######9   | 55/79 [00:34<00:15,  1.53it/s] 71%|#######   | 56/79 [00:34<00:15,  1.46it/s] 72%|#######2  | 57/79 [00:35<00:14,  1.47it/s] 73%|#######3  | 58/79 [00:36<00:14,  1.48it/s] 75%|#######4  | 59/79 [00:36<00:13,  1.51it/s] 76%|#######5  | 60/79 [00:37<00:12,  1.47it/s] 77%|#######7  | 61/79 [00:38<00:12,  1.49it/s] 78%|#######8  | 62/79 [00:38<00:11,  1.50it/s] 80%|#######9  | 63/79 [00:39<00:10,  1.50it/s] 81%|########1 | 64/79 [00:40<00:10,  1.47it/s] 82%|########2 | 65/79 [00:40<00:09,  1.47it/s] 84%|########3 | 66/79 [00:41<00:08,  1.51it/s] 85%|########4 | 67/79 [00:42<00:07,  1.54it/s] 86%|########6 | 68/79 [00:42<00:07,  1.55it/s] 87%|########7 | 69/79 [00:43<00:06,  1.49it/s] 89%|########8 | 70/79 [00:44<00:05,  1.51it/s] 90%|########9 | 71/79 [00:44<00:05,  1.52it/s] 91%|#########1| 72/79 [00:45<00:04,  1.46it/s] 92%|#########2| 73/79 [00:46<00:04,  1.49it/s] 94%|#########3| 74/79 [00:46<00:03,  1.44it/s] 95%|#########4| 75/79 [00:47<00:02,  1.44it/s] 96%|#########6| 76/79 [00:48<00:02,  1.48it/s] 97%|#########7| 77/79 [00:48<00:01,  1.49it/s] 99%|#########8| 78/79 [00:49<00:00,  1.48it/s]100%|##########| 79/79 [00:50<00:00,  1.17it/s]100%|##########| 79/79 [00:50<00:00,  1.55it/s]2021-11-15 10:14:44.079411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+
+Trainable params: 55,852,128
+Non-trainable params: 62,592
+_________________________________________________________________
+5000 5000 10000
+ResNet50_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\ResNet50_Notredame_band_aug_subject_finetuned_F50M50.99-0.3688.hdf5
+Running... {'run_id': 'ResNet50_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'ResNet50', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\ResNet50_Notredame_band_aug_subject_finetuned_F50M50.99-0.3688.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ resnet50 (Functional)       (None, 7, 7, 2048)        23587712  
+                                                                 
+ global_average_pooling2d_5   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_10 (Dense)            (None, 1024)              2098176   
+                                                                 
+ batch_normalization_302 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_5 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_302 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_11 (Dense)            (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 26,288,584
+Trainable params: 2,698,824
+Non-trainable params: 23,589,760
+_________________________________________________________________
+True
+Model: "sequential_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ resnet50 (Functional)       (None, 7, 7, 2048)        23587712  
+                                                                 
+ global_average_pooling2d_5   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_10 (Dense)            (None, 1024)              2098176   
+                                                                 
+ batch_normalization_302 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_5 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_302 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_11 (Dense)            (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 26,288,584
+Trainable params: 26,233,416
+Non-trainable params: 55,168
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\ResNet50_Notredame_band_aug_subject_finetuned_F50M50.99-0.3688.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06694d137.png' 319
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06118d1199.png' 134
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06785d308.png' 375
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06489d292.png' 251
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\05619d1959.png' 33
+Image shape:  (224, 224, 3)
+Label:  319
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ resnet50_input (InputLayer)  [(None, 224, 224, 3)]    0         
+                                                                 
+ resnet50 (Functional)       (None, 7, 7, 2048)        23587712  
+                                                                 
+ global_average_pooling2d_5   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_10 (Dense)            (None, 1024)              2098176   
+                                                                 
+ batch_normalization_302 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_5 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_302 (Activation)  (None, 1024)             0         
+                                                                 
+=================================================================
+Total params: 25,689,984
+Trainable params: 25,634,816
+Non-trainable params: 55,168
+_________________________________________________________________
+5000 5000 10000
+VGG19_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\VGG19_Notredame_band_aug_subject_finetuned_F50M50.52-0.4630.hdf5
+Running... {'run_id': 'VGG19_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'VGG19', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\VGG19_Notredame_band_aug_subject_finetuned_F50M50.52-0.4630.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ vgg19 (Functional)          (None, 7, 7, 512)         20024384  
+                                                                 
+  0%|          | 0/79 [00:00<?, ?it/s]  1%|1         | 1/79 [00:03<04:17,  3.31s/it]  3%|2         | 2/79 [00:03<02:09,  1.69s/it]  4%|3         | 3/79 [00:04<01:28,  1.16s/it]  5%|5         | 4/79 [00:04<01:09,  1.09it/s]  6%|6         | 5/79 [00:05<00:57,  1.28it/s]  8%|7         | 6/79 [00:06<00:52,  1.39it/s]  9%|8         | 7/79 [00:06<00:47,  1.52it/s] 10%|#         | 8/79 [00:07<00:44,  1.61it/s] 11%|#1        | 9/79 [00:07<00:41,  1.68it/s] 13%|#2        | 10/79 [00:08<00:40,  1.70it/s] 14%|#3        | 11/79 [00:08<00:38,  1.75it/s] 15%|#5        | 12/79 [00:09<00:38,  1.76it/s] 16%|#6        | 13/79 [00:09<00:37,  1.75it/s] 18%|#7        | 14/79 [00:10<00:37,  1.73it/s] 19%|#8        | 15/79 [00:11<00:37,  1.72it/s] 20%|##        | 16/79 [00:11<00:36,  1.74it/s] 22%|##1       | 17/79 [00:12<00:35,  1.75it/s] 23%|##2       | 18/79 [00:12<00:35,  1.74it/s] 24%|##4       | 19/79 [00:13<00:35,  1.70it/s] 25%|##5       | 20/79 [00:13<00:33,  1.74it/s] 27%|##6       | 21/79 [00:14<00:33,  1.73it/s] 28%|##7       | 22/79 [00:15<00:32,  1.75it/s] 29%|##9       | 23/79 [00:15<00:32,  1.72it/s] 30%|###       | 24/79 [00:16<00:31,  1.72it/s] 32%|###1      | 25/79 [00:16<00:31,  1.72it/s] 33%|###2      | 26/79 [00:17<00:30,  1.72it/s] 34%|###4      | 27/79 [00:18<00:30,  1.71it/s] 35%|###5      | 28/79 [00:18<00:29,  1.70it/s] 37%|###6      | 29/79 [00:19<00:29,  1.67it/s] 38%|###7      | 30/79 [00:19<00:29,  1.68it/s] 39%|###9      | 31/79 [00:20<00:28,  1.69it/s] 41%|####      | 32/79 [00:21<00:28,  1.66it/s] 42%|####1     | 33/79 [00:21<00:27,  1.66it/s] 43%|####3     | 34/79 [00:22<00:27,  1.65it/s] 44%|####4     | 35/79 [00:22<00:26,  1.63it/s] 46%|####5     | 36/79 [00:23<00:26,  1.61it/s] 47%|####6     | 37/79 [00:24<00:26,  1.61it/s] 48%|####8     | 38/79 [00:24<00:25,  1.61it/s] 49%|####9     | 39/79 [00:25<00:25,  1.58it/s] 51%|#####     | 40/79 [00:26<00:24,  1.58it/s] 52%|#####1    | 41/79 [00:26<00:23,  1.59it/s] 53%|#####3    | 42/79 [00:27<00:23,  1.59it/s] 54%|#####4    | 43/79 [00:27<00:22,  1.58it/s] 56%|#####5    | 44/79 [00:28<00:22,  1.59it/s] 57%|#####6    | 45/79 [00:29<00:21,  1.56it/s] 58%|#####8    | 46/79 [00:29<00:21,  1.56it/s] 59%|#####9    | 47/79 [00:30<00:20,  1.56it/s] 61%|######    | 48/79 [00:31<00:19,  1.55it/s] 62%|######2   | 49/79 [00:31<00:19,  1.54it/s] 63%|######3   | 50/79 [00:32<00:18,  1.53it/s] 65%|######4   | 51/79 [00:33<00:18,  1.52it/s] 66%|######5   | 52/79 [00:33<00:17,  1.51it/s] 67%|######7   | 53/79 [00:34<00:17,  1.52it/s] 68%|######8   | 54/79 [00:35<00:16,  1.50it/s] 70%|######9   | 55/79 [00:35<00:16,  1.49it/s] 71%|#######   | 56/79 [00:36<00:15,  1.49it/s] 72%|#######2  | 57/79 [00:37<00:14,  1.48it/s] 73%|#######3  | 58/79 [00:38<00:16,  1.24it/s] 75%|#######4  | 59/79 [00:39<00:15,  1.30it/s] 76%|#######5  | 60/79 [00:39<00:13,  1.36it/s] 77%|#######7  | 61/79 [00:40<00:12,  1.39it/s] 78%|#######8  | 62/79 [00:41<00:11,  1.42it/s] 80%|#######9  | 63/79 [00:41<00:11,  1.42it/s] 81%|########1 | 64/79 [00:42<00:10,  1.43it/s] 82%|########2 | 65/79 [00:43<00:09,  1.44it/s] 84%|########3 | 66/79 [00:43<00:08,  1.45it/s] 85%|########4 | 67/79 [00:44<00:08,  1.43it/s] 86%|########6 | 68/79 [00:45<00:07,  1.44it/s] 87%|########7 | 69/79 [00:45<00:06,  1.44it/s] 89%|########8 | 70/79 [00:46<00:06,  1.45it/s] 90%|########9 | 71/79 [00:47<00:05,  1.44it/s] 91%|#########1| 72/79 [00:47<00:04,  1.45it/s] 92%|#########2| 73/79 [00:48<00:04,  1.45it/s] 94%|#########3| 74/79 [00:49<00:03,  1.47it/s] 95%|#########4| 75/79 [00:50<00:02,  1.46it/s] 96%|#########6| 76/79 [00:50<00:02,  1.44it/s] 97%|#########7| 77/79 [00:51<00:01,  1.44it/s] 99%|#########8| 78/79 [00:51<00:00,  1.54it/s]100%|##########| 79/79 [00:53<00:00,  1.08it/s]100%|##########| 79/79 [00:53<00:00,  1.48it/s]2021-11-15 10:15:51.124028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+
+ global_average_pooling2d_6   (None, 512)              0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_12 (Dense)            (None, 1024)              525312    
+                                                                 
+ batch_normalization_303 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_6 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_303 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_13 (Dense)            (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 21,152,392
+Trainable params: 1,125,960
+Non-trainable params: 20,026,432
+_________________________________________________________________
+True
+Model: "sequential_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ vgg19 (Functional)          (None, 7, 7, 512)         20024384  
+                                                                 
+ global_average_pooling2d_6   (None, 512)              0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_12 (Dense)            (None, 1024)              525312    
+                                                                 
+ batch_normalization_303 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_6 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_303 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_13 (Dense)            (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 21,152,392
+Trainable params: 21,150,344
+Non-trainable params: 2,048
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\VGG19_Notredame_band_aug_subject_finetuned_F50M50.52-0.4630.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\05871d638.png' 75
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\05455d2116.png' 23
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\05642d1885.png' 36
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06589d724.png' 293
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06519d569.png' 266
+Image shape:  (224, 224, 3)
+Label:  75
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+Model: "model_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ vgg19_input (InputLayer)    [(None, 224, 224, 3)]     0         
+                                                                 
+ vgg19 (Functional)          (None, 7, 7, 512)         20024384  
+                                                                 
+ global_average_pooling2d_6   (None, 512)              0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_12 (Dense)            (None, 1024)              525312    
+                                                                 
+ batch_normalization_303 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_6 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_303 (Activation)  (None, 1024)             0         
+                                                                 
+=================================================================
+Total params: 20,553,792
+Trainable params: 20,551,744
+Non-trainable params: 2,048
+_________________________________________________________________
+5000 5000 10000
+Xception_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\Xception_Notredame_band_aug_subject_finetuned_F50M50.94-0.5978.hdf5
+Running... {'run_id': 'Xception_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'Xception', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\Xception_Notredame_band_aug_subject_finetuned_F50M50.94-0.5978.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ xception (Functional)       (None, 7, 7, 2048)        20861480  
+                                                                 
+ global_average_pooling2d_7   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_14 (Dense)            (None, 1024)              2098176   
+                                                                 
+ batch_normalization_308 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_7 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_304 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_15 (Dense)            (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 23,562,352
+Trainable params: 2,698,824
+Non-trainable params: 20,863,528
+_________________________________________________________________
+True
+Model: "sequential_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ xception (Functional)       (None, 7, 7, 2048)        20861480  
+                                                                 
+ global_average_pooling2d_7   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_14 (Dense)            (None, 1024)              2098176   
+  0%|          | 0/79 [00:00<?, ?it/s]  1%|1         | 1/79 [00:02<02:38,  2.03s/it]  3%|2         | 2/79 [00:02<01:35,  1.25s/it]  4%|3         | 3/79 [00:03<01:13,  1.03it/s]  5%|5         | 4/79 [00:04<01:05,  1.15it/s]  6%|6         | 5/79 [00:04<00:58,  1.26it/s]  8%|7         | 6/79 [00:05<00:54,  1.34it/s]  9%|8         | 7/79 [00:06<00:51,  1.39it/s] 10%|#         | 8/79 [00:06<00:50,  1.41it/s] 11%|#1        | 9/79 [00:07<00:48,  1.45it/s] 13%|#2        | 10/79 [00:08<00:47,  1.44it/s] 14%|#3        | 11/79 [00:08<00:47,  1.44it/s] 15%|#5        | 12/79 [00:09<00:47,  1.42it/s] 16%|#6        | 13/79 [00:10<00:46,  1.42it/s] 18%|#7        | 14/79 [00:10<00:45,  1.43it/s] 19%|#8        | 15/79 [00:11<00:44,  1.43it/s] 20%|##        | 16/79 [00:12<00:44,  1.42it/s] 22%|##1       | 17/79 [00:13<00:43,  1.42it/s] 23%|##2       | 18/79 [00:13<00:42,  1.43it/s] 24%|##4       | 19/79 [00:14<00:41,  1.43it/s] 25%|##5       | 20/79 [00:15<00:41,  1.42it/s] 27%|##6       | 21/79 [00:15<00:40,  1.43it/s] 28%|##7       | 22/79 [00:16<00:40,  1.42it/s] 29%|##9       | 23/79 [00:17<00:38,  1.45it/s] 30%|###       | 24/79 [00:17<00:38,  1.43it/s] 32%|###1      | 25/79 [00:18<00:38,  1.40it/s] 33%|###2      | 26/79 [00:19<00:37,  1.42it/s] 34%|###4      | 27/79 [00:20<00:36,  1.41it/s] 35%|###5      | 28/79 [00:20<00:35,  1.43it/s] 37%|###6      | 29/79 [00:21<00:35,  1.41it/s] 38%|###7      | 30/79 [00:22<00:34,  1.42it/s] 39%|###9      | 31/79 [00:22<00:33,  1.43it/s] 41%|####      | 32/79 [00:23<00:33,  1.41it/s] 42%|####1     | 33/79 [00:24<00:31,  1.44it/s] 43%|####3     | 34/79 [00:25<00:32,  1.39it/s] 44%|####4     | 35/79 [00:25<00:31,  1.39it/s] 46%|####5     | 36/79 [00:26<00:30,  1.42it/s] 47%|####6     | 37/79 [00:27<00:29,  1.42it/s] 48%|####8     | 38/79 [00:27<00:28,  1.42it/s] 49%|####9     | 39/79 [00:28<00:27,  1.46it/s] 51%|#####     | 40/79 [00:29<00:26,  1.46it/s] 52%|#####1    | 41/79 [00:29<00:25,  1.47it/s] 53%|#####3    | 42/79 [00:30<00:25,  1.45it/s] 54%|#####4    | 43/79 [00:31<00:24,  1.46it/s] 56%|#####5    | 44/79 [00:31<00:23,  1.48it/s] 57%|#####6    | 45/79 [00:32<00:22,  1.49it/s] 58%|#####8    | 46/79 [00:33<00:22,  1.47it/s] 59%|#####9    | 47/79 [00:33<00:22,  1.44it/s] 61%|######    | 48/79 [00:34<00:21,  1.45it/s] 62%|######2   | 49/79 [00:35<00:20,  1.47it/s] 63%|######3   | 50/79 [00:35<00:19,  1.47it/s] 65%|######4   | 51/79 [00:36<00:19,  1.44it/s] 66%|######5   | 52/79 [00:37<00:18,  1.45it/s] 67%|######7   | 53/79 [00:38<00:18,  1.43it/s] 68%|######8   | 54/79 [00:38<00:17,  1.42it/s] 70%|######9   | 55/79 [00:39<00:16,  1.44it/s] 71%|#######   | 56/79 [00:40<00:16,  1.42it/s] 72%|#######2  | 57/79 [00:40<00:15,  1.46it/s] 73%|#######3  | 58/79 [00:41<00:15,  1.39it/s] 75%|#######4  | 59/79 [00:42<00:14,  1.38it/s] 76%|#######5  | 60/79 [00:43<00:14,  1.35it/s] 77%|#######7  | 61/79 [00:43<00:12,  1.40it/s] 78%|#######8  | 62/79 [00:44<00:12,  1.40it/s] 80%|#######9  | 63/79 [00:45<00:11,  1.42it/s] 81%|########1 | 64/79 [00:45<00:10,  1.42it/s] 82%|########2 | 65/79 [00:46<00:09,  1.42it/s] 84%|########3 | 66/79 [00:47<00:09,  1.44it/s] 85%|########4 | 67/79 [00:48<00:08,  1.42it/s] 86%|########6 | 68/79 [00:48<00:07,  1.41it/s] 87%|########7 | 69/79 [00:49<00:07,  1.40it/s] 89%|########8 | 70/79 [00:50<00:06,  1.40it/s] 90%|########9 | 71/79 [00:50<00:05,  1.43it/s] 91%|#########1| 72/79 [00:51<00:05,  1.40it/s] 92%|#########2| 73/79 [00:52<00:04,  1.40it/s] 94%|#########3| 74/79 [00:53<00:03,  1.38it/s] 95%|#########4| 75/79 [00:53<00:02,  1.37it/s] 96%|#########6| 76/79 [00:54<00:02,  1.37it/s] 97%|#########7| 77/79 [00:55<00:01,  1.36it/s] 99%|#########8| 78/79 [00:56<00:00,  1.37it/s]100%|##########| 79/79 [00:57<00:00,  1.15it/s]100%|##########| 79/79 [00:57<00:00,  1.38it/s]2021-11-15 10:17:06.594404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5
+
+                                                                 
+ batch_normalization_308 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_7 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_304 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_15 (Dense)            (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 23,562,352
+Trainable params: 23,505,776
+Non-trainable params: 56,576
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\Xception_Notredame_band_aug_subject_finetuned_F50M50.94-0.5978.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06808d260.png' 398
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06474d1018.png' 247
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06493d544.png' 255
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06344d1153.png' 197
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06030d1722.png' 107
+Image shape:  (224, 224, 3)
+Label:  398
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+Model: "model_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ xception_input (InputLayer)  [(None, 224, 224, 3)]    0         
+                                                                 
+ xception (Functional)       (None, 7, 7, 2048)        20861480  
+                                                                 
+ global_average_pooling2d_7   (None, 2048)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_14 (Dense)            (None, 1024)              2098176   
+                                                                 
+ batch_normalization_308 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_7 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_304 (Activation)  (None, 1024)             0         
+                                                                 
+=================================================================
+Total params: 22,963,752
+Trainable params: 22,907,176
+Non-trainable params: 56,576
+_________________________________________________________________
+5000 5000 10000
+EfficientNetB0_Notredame_band_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base-notredame\checkpoints\EfficientNetB0_Notredame_band_aug_subject_finetuned_F50M50.79-0.3495.hdf5
+Running... {'run_id': 'EfficientNetB0_Notredame_band_aug_subject_finetuned_F50M50', 'model': 'EfficientNetB0', 'class': 'subject', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 0, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 128, 'gpu': [1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-notredame\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-notredame\\checkpoints\\EfficientNetB0_Notredame_band_aug_subject_finetuned_F50M50.79-0.3495.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'band', 'image_height': 224, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'eval_dir': 'F:\\Lab\\nfs\\notredame\\nir-data-face', 'labels': 'F:\\Lab\\nfs\\base-notredame\\nir_labels_', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 1
+Model: "sequential_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetb0 (Functional)  (None, 7, 7, 1280)       4049571   
+                                                                 
+ global_average_pooling2d_8   (None, 1280)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_16 (Dense)            (None, 1024)              1311744   
+                                                                 
+ batch_normalization_309 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_8 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_305 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_17 (Dense)            (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 5,964,011
+Trainable params: 1,912,392
+Non-trainable params: 4,051,619
+_________________________________________________________________
+True
+Model: "sequential_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetb0 (Functional)  (None, 7, 7, 1280)       4049571   
+                                                                 
+ global_average_pooling2d_8   (None, 1280)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_16 (Dense)            (None, 1024)              1311744   
+                                                                 
+ batch_normalization_309 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_8 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_305 (Activation)  (None, 1024)             0         
+                                                                 
+ dense_17 (Dense)            (None, 584)               598600    
+                                                                 
+=================================================================
+Total params: 5,964,011
+Trainable params: 5,919,940
+Non-trainable params: 44,071
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-notredame\checkpoints\EfficientNetB0_Notredame_band_aug_subject_finetuned_F50M50.79-0.3495.hdf5
+Male : 8965, Female: 8885
+Male : 909, Female: 951
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\05868d1566.png' 74
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06190d676.png' 153
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06565d178.png' 283
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06552d442.png' 280
+b'F:\\Lab\\nfs\\notredame\\nir-data-face\\06801d25.png' 391
+Image shape:  (224, 224, 3)
+Label:  74
+Train Size : 14280
+Validation Size : 3570
+Test Size : 1860
+Model: "model_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetb0_input (Input  [(None, 224, 224, 3)]    0         
+  0%|          | 0/79 [00:00<?, ?it/s]  1%|1         | 1/79 [00:02<02:53,  2.22s/it]  3%|2         | 2/79 [00:02<01:33,  1.22s/it]  4%|3         | 3/79 [00:03<01:07,  1.13it/s]  5%|5         | 4/79 [00:03<00:55,  1.36it/s]  6%|6         | 5/79 [00:04<00:52,  1.42it/s]  8%|7         | 6/79 [00:04<00:47,  1.55it/s]  9%|8         | 7/79 [00:05<00:44,  1.63it/s] 10%|#         | 8/79 [00:05<00:41,  1.72it/s] 11%|#1        | 9/79 [00:06<00:40,  1.72it/s] 13%|#2        | 10/79 [00:07<00:39,  1.76it/s] 14%|#3        | 11/79 [00:07<00:38,  1.77it/s] 15%|#5        | 12/79 [00:08<00:37,  1.80it/s] 16%|#6        | 13/79 [00:08<00:36,  1.81it/s] 18%|#7        | 14/79 [00:09<00:37,  1.75it/s] 19%|#8        | 15/79 [00:09<00:35,  1.82it/s] 20%|##        | 16/79 [00:10<00:34,  1.81it/s] 22%|##1       | 17/79 [00:11<00:35,  1.74it/s] 23%|##2       | 18/79 [00:11<00:37,  1.61it/s] 24%|##4       | 19/79 [00:12<00:35,  1.69it/s] 25%|##5       | 20/79 [00:12<00:34,  1.72it/s] 27%|##6       | 21/79 [00:13<00:33,  1.73it/s] 28%|##7       | 22/79 [00:14<00:33,  1.71it/s] 29%|##9       | 23/79 [00:14<00:32,  1.70it/s] 30%|###       | 24/79 [00:15<00:32,  1.67it/s] 32%|###1      | 25/79 [00:15<00:31,  1.71it/s] 33%|###2      | 26/79 [00:16<00:30,  1.73it/s] 34%|###4      | 27/79 [00:16<00:30,  1.69it/s] 35%|###5      | 28/79 [00:17<00:29,  1.71it/s] 37%|###6      | 29/79 [00:18<00:29,  1.67it/s] 38%|###7      | 30/79 [00:18<00:29,  1.66it/s] 39%|###9      | 31/79 [00:19<00:28,  1.69it/s] 41%|####      | 32/79 [00:19<00:27,  1.70it/s] 42%|####1     | 33/79 [00:20<00:26,  1.71it/s] 43%|####3     | 34/79 [00:21<00:26,  1.68it/s] 44%|####4     | 35/79 [00:21<00:26,  1.63it/s] 46%|####5     | 36/79 [00:22<00:25,  1.69it/s] 47%|####6     | 37/79 [00:22<00:24,  1.68it/s] 48%|####8     | 38/79 [00:23<00:24,  1.67it/s] 49%|####9     | 39/79 [00:24<00:24,  1.61it/s] 51%|#####     | 40/79 [00:24<00:24,  1.60it/s] 52%|#####1    | 41/79 [00:25<00:23,  1.59it/s] 53%|#####3    | 42/79 [00:26<00:23,  1.58it/s] 54%|#####4    | 43/79 [00:26<00:23,  1.55it/s] 56%|#####5    | 44/79 [00:27<00:22,  1.56it/s] 57%|#####6    | 45/79 [00:28<00:21,  1.58it/s] 58%|#####8    | 46/79 [00:28<00:21,  1.57it/s] 59%|#####9    | 47/79 [00:29<00:19,  1.61it/s] 61%|######    | 48/79 [00:29<00:19,  1.61it/s] 62%|######2   | 49/79 [00:30<00:19,  1.53it/s] 63%|######3   | 50/79 [00:31<00:18,  1.53it/s] 65%|######4   | 51/79 [00:31<00:17,  1.57it/s] 66%|######5   | 52/79 [00:32<00:17,  1.58it/s] 67%|######7   | 53/79 [00:33<00:16,  1.54it/s] 68%|######8   | 54/79 [00:33<00:16,  1.55it/s] 70%|######9   | 55/79 [00:34<00:15,  1.57it/s] 71%|#######   | 56/79 [00:35<00:14,  1.55it/s] 72%|#######2  | 57/79 [00:35<00:14,  1.47it/s] 73%|#######3  | 58/79 [00:36<00:13,  1.51it/s] 75%|#######4  | 59/79 [00:37<00:13,  1.50it/s] 76%|#######5  | 60/79 [00:37<00:12,  1.51it/s] 77%|#######7  | 61/79 [00:38<00:11,  1.55it/s] 78%|#######8  | 62/79 [00:39<00:11,  1.46it/s] 80%|#######9  | 63/79 [00:39<00:10,  1.48it/s] 81%|########1 | 64/79 [00:40<00:10,  1.49it/s] 82%|########2 | 65/79 [00:41<00:09,  1.48it/s] 84%|########3 | 66/79 [00:41<00:09,  1.43it/s] 85%|########4 | 67/79 [00:42<00:08,  1.45it/s] 86%|########6 | 68/79 [00:43<00:07,  1.43it/s] 87%|########7 | 69/79 [00:44<00:06,  1.45it/s] 89%|########8 | 70/79 [00:44<00:06,  1.46it/s] 90%|########9 | 71/79 [00:45<00:05,  1.46it/s] 91%|#########1| 72/79 [00:46<00:04,  1.43it/s] 92%|#########2| 73/79 [00:46<00:04,  1.46it/s] 94%|#########3| 74/79 [00:47<00:03,  1.48it/s] 95%|#########4| 75/79 [00:48<00:02,  1.43it/s] 96%|#########6| 76/79 [00:48<00:02,  1.45it/s] 97%|#########7| 77/79 [00:49<00:01,  1.47it/s] 99%|#########8| 78/79 [00:50<00:00,  1.52it/s]100%|##########| 79/79 [00:51<00:00,  1.08it/s]100%|##########| 79/79 [00:51<00:00,  1.53it/s]
+
+ Layer)                                                          
+                                                                 
+ efficientnetb0 (Functional)  (None, 7, 7, 1280)       4049571   
+                                                                 
+ global_average_pooling2d_8   (None, 1280)             0         
+ (GlobalAveragePooling2D)                                        
+                                                                 
+ dense_16 (Dense)            (None, 1024)              1311744   
+                                                                 
+ batch_normalization_309 (Ba  (None, 1024)             4096      
+ tchNormalization)                                               
+                                                                 
+ dropout_8 (Dropout)         (None, 1024)              0         
+                                                                 
+ activation_305 (Activation)  (None, 1024)             0         
+                                                                 
+=================================================================
+Total params: 5,365,411
+Trainable params: 5,321,340
+Non-trainable params: 44,071
+_________________________________________________________________
+5000 5000 10000
+Exception ignored in: <function Pool.__del__ at 0x000001E4A8BA2E50>
+Traceback (most recent call last):
+  File "C:\Users\g728v562\AppData\Local\Programs\Python\Python38\lib\multiprocessing\pool.py", line 268, in __del__
+    self._change_notifier.put(None)
+  File "C:\Users\g728v562\AppData\Local\Programs\Python\Python38\lib\multiprocessing\queues.py", line 365, in put
+    self._writer.send_bytes(obj)
+  File "C:\Users\g728v562\AppData\Local\Programs\Python\Python38\lib\multiprocessing\connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "C:\Users\g728v562\AppData\Local\Programs\Python\Python38\lib\multiprocessing\connection.py", line 280, in _send_bytes
+    ov, err = _winapi.WriteFile(self._handle, buf, overlapped=True)
+OSError: [WinError 6] The handle is invalid

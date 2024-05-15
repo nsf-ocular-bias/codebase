@@ -1,0 +1,21 @@
+
+(env) F:\Lab\nfs\base>python runner.py 
+2021-11-08 12:09:13.777124: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudart64_110.dll
+EfficientNetB4_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\EfficientNetB4_UFPR_aligned_aug_subject_finetuned_F50M50.76-0.1354.hdf5
+DenseNet121_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\DenseNet121_UFPR_aligned_aug_subject_finetuned_F50M50.51-0.3728.hdf5
+MobileNetV2_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\MobileNetV2_UFPR_aligned_aug_subject_finetuned_F50M50.94-0.4001.hdf5
+InceptionV3_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\InceptionV3_UFPR_aligned_aug_subject_finetuned_F50M50.173-0.3267.hdf5
+InceptionResNetV2_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\InceptionResNetV2_UFPR_aligned_aug_subject_finetuned_F50M50.97-0.3299.hdf5
+ResNet50_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\ResNet50_UFPR_aligned_aug_subject_finetuned_F50M50.92-0.2070.hdf5
+VGG19_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\VGG19_UFPR_aligned_aug_subject_finetuned_F50M50.30-0.4559.hdf5
+Xception_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\Xception_UFPR_aligned_aug_subject_finetuned_F50M50.137-0.5001.hdf5
+EfficientNetB0_UFPR_aligned_aug_subject_finetuned_F50M50
+F:\Lab\nfs\base\checkpoints\EfficientNetB0_UFPR_aligned_aug_subject_finetuned_F50M50.77-0.1817.hdf5

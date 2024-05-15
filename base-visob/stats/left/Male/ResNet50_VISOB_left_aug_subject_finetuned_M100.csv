@@ -1,0 +1,19 @@
+Generated using PyEER 0.5.5
+Experiment ID,GMean,GSTD,IMean,ISTD,Sensitivity index (d'),AUC,J-Index,J-Index_TH,MCC,MCC_TH,EERlow,EERhigh,EER,ZeroFMR,FMR1000,FMR100,FMR20,FMR10,ZeroFNMR,EER_TH,ZeroFMR_TH,FMR1000_TH,FMR100_TH,FMR20_TH,FMR10_TH,ZeroFNMR_TH
+ResNet50_VISOB_left_aug_subject_finetuned_M100,-0.3717328994899988,0.07856674691269608,-0.6008053615510464,0.1088024072204407,2.4139185658793245,0.95965988,0.7868,-0.4754403233528137,0.7868002517761208,-0.4754403233528137,0.107,0.107,0.107,0.9428,0.8736,0.5028,0.1926,0.1138,0.7928,-0.47573554515838623,-0.25550368428230286,-0.28304919600486755,-0.36541011929512024,-0.43886256217956543,-0.47192147374153137,-0.6823267936706543
+
+Legend:
+GMean: Genuine scores distribution mean
+GSTD: Genuine scores distribution standard deviation
+IMean: Impostor scores distribution mean
+IVariance: Impostor scores distribution standard deviation
+Sensitivity index (d'): See NICE:II protocol evaluation
+AUC: Area under the ROC curve
+J-Index: Youden's J statistic (Youden's Index)
+MCC: Matthews Correlation Coefficient
+EER: Equal Error Rate
+"EERlow, EERhigh: See FVC2000 protocol evaluation"
+FMR: False Match Rate
+FNMR: False Non-Match Rate
+_TH: Threshold
+EER_TH: Threshold for which EERlow and EERHigh were calculated

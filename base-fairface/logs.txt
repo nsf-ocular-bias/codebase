@@ -1,0 +1,185 @@
+
+(env) F:\Lab\nfs\base-fairface>python runner.py 
+2021-11-12 13:15:09.661002: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-12 13:15:12.701014: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5
+F:\Lab\env\lib\site-packages\tensorflow_addons\utils\ensure_tf_install.py:53: UserWarning: Tensorflow Addons supports using Python ops for all Tensorflow versions above or equal to 2.3.0 and strictly below 2.6.0 (nightly versions are not supported). 
+ The versions of TensorFlow you are currently using is 2.7.0 and is not supported. 
+Some things might work, some things might not.
+If you were to encounter a bug, do not file an issue.
+If you want to make sure you're using a tested and supported configuration, either change the TensorFlow version or the TensorFlow Addons's version. 
+You can find the compatibility matrix in TensorFlow Addon's readme:
+https://github.com/tensorflow/addons
+  warnings.warn(
+WARNING:tensorflow:From F:\Lab\nfs\base-fairface\main.py:31: The name tf.keras.backend.set_session is deprecated. Please use tf.compat.v1.keras.backend.set_session instead.
+
+2021-11-12 13:15:13.411216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 22057 MB memory:  -> device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5
+2021-11-12 13:16:30.089107: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:380] Filling up shuffle buffer (this may take a while): 1 of 1024
+2021-11-12 13:16:30.221782: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:380] Filling up shuffle buffer (this may take a while): 134 of 1024
+2021-11-12 13:16:31.217166: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:405] Shuffle buffer filled.
+2021-11-12 13:16:32.193113: I tensorflow/stream_executor/cuda/cuda_dnn.cc:366] Loaded cuDNN version 8202
+Running... {'run_id': 'EfficientNetB4_fairface_cropped_aug_gender_finetuned_F50M50', 'model': 'EfficientNetB4', 'mixed_precision': True, 'class': 'gender', 'allow_growth': True, 'mode': 'train', 'viz_method': 'gen_data', 'test_mode': 1, 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 512, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-fairface\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-fairface\\checkpoints\\EfficientNetB4_fairface_cropped_aug_gender_base_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'cropped', 'image_height': 256, 'image_width': 256, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\fairface\\fairface-img-margin025-trainval', 'eval_dir': 'F:\\Lab\\datasets\\fairface\\fairface-img-margin025-trainval', 'labels': 'F:\\Lab\\datasets\\fairface', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 8}}
+Number of devices: 1
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetb4 (Functional)  (None, 8, 8, 1792)       17673823  
+                                                                 
+ global_average_pooling2d (G  (None, 1792)             0         
+ lobalAveragePooling2D)                                          
+                                                                 
+ dense (Dense)               (None, 1024)              1836032   
+                                                                 
+ batch_normalization (BatchN  (None, 1024)             4096      
+ ormalization)                                                   
+                                                                 
+ dropout (Dropout)           (None, 1024)              0         
+                                                                 
+ activation (Activation)     (None, 1024)              0         
+                                                                 
+ dense_1 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 19,516,001
+Trainable params: 1,840,130
+Non-trainable params: 17,675,871
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-fairface\checkpoints\EfficientNetB4_fairface_cropped_aug_gender_base_F50M50.hdf5
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetb4 (Functional)  (None, 8, 8, 1792)       17673823  
+                                                                 
+ global_average_pooling2d (G  (None, 1792)             0         
+ lobalAveragePooling2D)                                          
+                                                                 
+ dense (Dense)               (None, 1024)              1836032   
+                                                                 
+ batch_normalization (BatchN  (None, 1024)             4096      
+ ormalization)                                                   
+                                                                 
+ dropout (Dropout)           (None, 1024)              0         
+                                                                 
+ activation (Activation)     (None, 1024)              0         
+                                                                 
+ dense_1 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 19,516,001
+Trainable params: 19,388,746
+Non-trainable params: 127,255
+_________________________________________________________________
+b'F:\\Lab\\datasets\\fairface\\fairface-img-margin025-trainval\\train/18991.jpg' 1
+b'F:\\Lab\\datasets\\fairface\\fairface-img-margin025-trainval\\train/76422.jpg' 1
+b'F:\\Lab\\datasets\\fairface\\fairface-img-margin025-trainval\\train/14775.jpg' 0
+b'F:\\Lab\\datasets\\fairface\\fairface-img-margin025-trainval\\train/20489.jpg' 1
+b'F:\\Lab\\datasets\\fairface\\fairface-img-margin025-trainval\\train/15461.jpg' 0
+Image shape:  (224, 224, 3)
+Label:  1
+Train Size : 80350
+Validation Size : 17348
+Test Size : 10954
+Epoch 1/1000
+628/628 - 581s - loss: 0.3306 - accuracy: 0.8511 - val_loss: 0.2380 - val_accuracy: 0.8962 - lr: 3.0000e-04 - 581s/epoch - 925ms/step
+Epoch 2/1000
+628/628 - 446s - loss: 0.1667 - accuracy: 0.9291 - val_loss: 0.2775 - val_accuracy: 0.8965 - lr: 3.0000e-04 - 446s/epoch - 711ms/step
+Epoch 3/1000
+628/628 - 462s - loss: 0.0983 - accuracy: 0.9613 - val_loss: 0.2977 - val_accuracy: 0.8994 - lr: 3.0000e-04 - 462s/epoch - 735ms/step
+Epoch 4/1000
+628/628 - 458s - loss: 0.0663 - accuracy: 0.9743 - val_loss: 0.3370 - val_accuracy: 0.9017 - lr: 3.0000e-04 - 458s/epoch - 730ms/step
+Epoch 5/1000
+628/628 - 458s - loss: 0.0518 - accuracy: 0.9800 - val_loss: 0.3726 - val_accuracy: 0.9040 - lr: 3.0000e-04 - 458s/epoch - 729ms/step
+Epoch 6/1000
+628/628 - 460s - loss: 0.0409 - accuracy: 0.9850 - val_loss: 0.3776 - val_accuracy: 0.9005 - lr: 3.0000e-04 - 460s/epoch - 733ms/step
+Epoch 7/1000
+628/628 - 460s - loss: 0.0364 - accuracy: 0.9864 - val_loss: 0.4076 - val_accuracy: 0.9038 - lr: 3.0000e-04 - 460s/epoch - 732ms/step
+Epoch 8/1000
+628/628 - 457s - loss: 0.0325 - accuracy: 0.9883 - val_loss: 0.3960 - val_accuracy: 0.9045 - lr: 3.0000e-04 - 457s/epoch - 728ms/step
+Epoch 9/1000
+628/628 - 458s - loss: 0.0289 - accuracy: 0.9894 - val_loss: 0.4185 - val_accuracy: 0.9039 - lr: 3.0000e-04 - 458s/epoch - 729ms/step
+Epoch 10/1000
+628/628 - 462s - loss: 0.0289 - accuracy: 0.9895 - val_loss: 0.3686 - val_accuracy: 0.9070 - lr: 3.0000e-04 - 462s/epoch - 735ms/step
+Epoch 11/1000
+628/628 - 457s - loss: 0.0242 - accuracy: 0.9915 - val_loss: 0.4242 - val_accuracy: 0.9074 - lr: 3.0000e-04 - 457s/epoch - 728ms/step
+Epoch 12/1000
+628/628 - 460s - loss: 0.0240 - accuracy: 0.9911 - val_loss: 0.4206 - val_accuracy: 0.9086 - lr: 3.0000e-04 - 460s/epoch - 732ms/step
+Epoch 13/1000
+628/628 - 462s - loss: 0.0232 - accuracy: 0.9919 - val_loss: 0.4140 - val_accuracy: 0.9039 - lr: 3.0000e-04 - 462s/epoch - 735ms/step
+Epoch 14/1000
+628/628 - 461s - loss: 0.0228 - accuracy: 0.9918 - val_loss: 0.4141 - val_accuracy: 0.9070 - lr: 3.0000e-04 - 461s/epoch - 735ms/step
+Epoch 15/1000
+628/628 - 460s - loss: 0.0196 - accuracy: 0.9927 - val_loss: 0.4235 - val_accuracy: 0.9067 - lr: 3.0000e-04 - 460s/epoch - 732ms/step
+Epoch 16/1000
+628/628 - 465s - loss: 0.0179 - accuracy: 0.9935 - val_loss: 0.4712 - val_accuracy: 0.9077 - lr: 3.0000e-04 - 465s/epoch - 740ms/step
+Epoch 17/1000
+628/628 - 468s - loss: 0.0185 - accuracy: 0.9936 - val_loss: 0.4804 - val_accuracy: 0.9011 - lr: 3.0000e-04 - 468s/epoch - 746ms/step
+Epoch 18/1000
+628/628 - 461s - loss: 0.0188 - accuracy: 0.9932 - val_loss: 0.4049 - val_accuracy: 0.9091 - lr: 3.0000e-04 - 461s/epoch - 735ms/step
+Epoch 19/1000
+628/628 - 461s - loss: 0.0154 - accuracy: 0.9946 - val_loss: 0.4723 - val_accuracy: 0.9064 - lr: 3.0000e-04 - 461s/epoch - 735ms/step
+Epoch 20/1000
+628/628 - 462s - loss: 0.0172 - accuracy: 0.9939 - val_loss: 0.4634 - val_accuracy: 0.9063 - lr: 3.0000e-04 - 462s/epoch - 735ms/step
+Epoch 21/1000
+628/628 - 461s - loss: 0.0152 - accuracy: 0.9946 - val_loss: 0.4538 - val_accuracy: 0.9078 - lr: 3.0000e-04 - 461s/epoch - 735ms/step
+Epoch 22/1000
+628/628 - 472s - loss: 0.0147 - accuracy: 0.9945 - val_loss: 0.4784 - val_accuracy: 0.9081 - lr: 3.0000e-04 - 472s/epoch - 751ms/step
+Epoch 23/1000
+628/628 - 486s - loss: 0.0138 - accuracy: 0.9952 - val_loss: 0.5313 - val_accuracy: 0.9002 - lr: 3.0000e-04 - 486s/epoch - 774ms/step
+Epoch 24/1000
+628/628 - 490s - loss: 0.0148 - accuracy: 0.9947 - val_loss: 0.4974 - val_accuracy: 0.9058 - lr: 3.0000e-04 - 490s/epoch - 781ms/step
+Epoch 25/1000
+628/628 - 484s - loss: 0.0135 - accuracy: 0.9953 - val_loss: 0.4622 - val_accuracy: 0.9070 - lr: 3.0000e-04 - 484s/epoch - 770ms/step
+Epoch 26/1000
+628/628 - 477s - loss: 0.0136 - accuracy: 0.9951 - val_loss: 0.4639 - val_accuracy: 0.9071 - lr: 3.0000e-04 - 477s/epoch - 760ms/step
+Epoch 27/1000
+628/628 - 463s - loss: 0.0119 - accuracy: 0.9958 - val_loss: 0.4639 - val_accuracy: 0.9077 - lr: 3.0000e-04 - 463s/epoch - 737ms/step
+Epoch 28/1000
+628/628 - 453s - loss: 0.0118 - accuracy: 0.9959 - val_loss: 0.4577 - val_accuracy: 0.9089 - lr: 3.0000e-04 - 453s/epoch - 722ms/step
+Epoch 29/1000
+628/628 - 463s - loss: 0.0119 - accuracy: 0.9959 - val_loss: 0.5047 - val_accuracy: 0.9045 - lr: 3.0000e-04 - 463s/epoch - 738ms/step
+Epoch 30/1000
+628/628 - 474s - loss: 0.0117 - accuracy: 0.9960 - val_loss: 0.5540 - val_accuracy: 0.9013 - lr: 3.0000e-04 - 474s/epoch - 755ms/step
+Epoch 31/1000
+628/628 - 475s - loss: 0.0122 - accuracy: 0.9955 - val_loss: 0.5443 - val_accuracy: 0.8954 - lr: 3.0000e-04 - 475s/epoch - 756ms/step
+Epoch 32/1000
+628/628 - 474s - loss: 0.0118 - accuracy: 0.9957 - val_loss: 0.4939 - val_accuracy: 0.9089 - lr: 3.0000e-04 - 474s/epoch - 754ms/step
+Epoch 33/1000
+628/628 - 474s - loss: 0.0092 - accuracy: 0.9968 - val_loss: 0.4989 - val_accuracy: 0.9083 - lr: 3.0000e-04 - 474s/epoch - 755ms/step
+Epoch 34/1000
+628/628 - 474s - loss: 0.0100 - accuracy: 0.9963 - val_loss: 0.4865 - val_accuracy: 0.9098 - lr: 3.0000e-04 - 474s/epoch - 755ms/step
+Epoch 35/1000
+628/628 - 474s - loss: 0.0106 - accuracy: 0.9964 - val_loss: 0.4515 - val_accuracy: 0.9086 - lr: 3.0000e-04 - 474s/epoch - 754ms/step
+Epoch 36/1000
+628/628 - 482s - loss: 0.0096 - accuracy: 0.9966 - val_loss: 0.5352 - val_accuracy: 0.9023 - lr: 3.0000e-04 - 482s/epoch - 767ms/step
+Epoch 37/1000
+628/628 - 485s - loss: 0.0093 - accuracy: 0.9968 - val_loss: 0.5236 - val_accuracy: 0.9088 - lr: 3.0000e-04 - 485s/epoch - 772ms/step
+Epoch 38/1000
+628/628 - 449s - loss: 0.0104 - accuracy: 0.9965 - val_loss: 0.4542 - val_accuracy: 0.9095 - lr: 3.0000e-04 - 449s/epoch - 715ms/step
+Epoch 39/1000
+628/628 - 440s - loss: 0.0088 - accuracy: 0.9969 - val_loss: 0.4426 - val_accuracy: 0.9097 - lr: 3.0000e-04 - 440s/epoch - 701ms/step
+Epoch 40/1000
+628/628 - 441s - loss: 0.0089 - accuracy: 0.9968 - val_loss: 0.5021 - val_accuracy: 0.9094 - lr: 3.0000e-04 - 441s/epoch - 702ms/step
+Epoch 41/1000
+628/628 - 443s - loss: 0.0095 - accuracy: 0.9971 - val_loss: 0.4895 - val_accuracy: 0.9103 - lr: 3.0000e-04 - 443s/epoch - 706ms/step
+Epoch 42/1000
+628/628 - 443s - loss: 0.0091 - accuracy: 0.9969 - val_loss: 0.4510 - val_accuracy: 0.9121 - lr: 3.0000e-04 - 443s/epoch - 706ms/step
+Epoch 43/1000
+628/628 - 441s - loss: 0.0092 - accuracy: 0.9968 - val_loss: 0.4248 - val_accuracy: 0.9088 - lr: 3.0000e-04 - 441s/epoch - 703ms/step
+Epoch 44/1000
+628/628 - 443s - loss: 0.0079 - accuracy: 0.9972 - val_loss: 0.4793 - val_accuracy: 0.9105 - lr: 3.0000e-04 - 443s/epoch - 705ms/step
+Epoch 45/1000
+628/628 - 439s - loss: 0.0087 - accuracy: 0.9973 - val_loss: 0.4392 - val_accuracy: 0.9054 - lr: 3.0000e-04 - 439s/epoch - 699ms/step
+Epoch 46/1000
+628/628 - 440s - loss: 0.0083 - accuracy: 0.9969 - val_loss: 0.4941 - val_accuracy: 0.9062 - lr: 3.0000e-04 - 440s/epoch - 700ms/step
+Epoch 47/1000
+628/628 - 440s - loss: 0.0087 - accuracy: 0.9968 - val_loss: 0.5105 - val_accuracy: 0.9073 - lr: 3.0000e-04 - 440s/epoch - 700ms/step
+Epoch 48/1000
+628/628 - 439s - loss: 0.0078 - accuracy: 0.9975 - val_loss: 0.5032 - val_accuracy: 0.9089 - lr: 3.0000e-04 - 439s/epoch - 699ms/step
+Epoch 49/1000
+628/628 - 437s - loss: 0.0080 - accuracy: 0.9971 - val_loss: 0.5301 - val_accuracy: 0.9062 - lr: 3.0000e-04 - 437s/epoch - 696ms/step
+Epoch 50/1000
+628/628 - 440s - loss: 0.0076 - accuracy: 0.9971 - val_loss: 0.4869 - val_accuracy: 0.9096 - lr: 3.0000e-04 - 440s/epoch - 701ms/step
+Epoch 51/1000
+628/628 - 438s - loss: 0.0082 - accuracy: 0.9971 - val_loss: 0.5078 - val_accuracy: 0.9116 - lr: 3.0000e-04 - 438s/epoch - 698ms/step

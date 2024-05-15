@@ -1,0 +1,28 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-10-13T05:09:16.968014",
+    "startedAt": "2021-10-13T05:09:06.037515",
+    "docker": null,
+    "gpu": "Quadro RTX 6000",
+    "gpu_count": 2,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [
+        "--ip=127.0.0.1",
+        "--stdin=9008",
+        "--control=9006",
+        "--hb=9005",
+        "--Session.signature_scheme=\"hmac-sha256\"",
+        "--Session.key=b\"cd158323-71fb-4756-b56d-2fb8c1dc62c4\"",
+        "--shell=9007",
+        "--transport=\"tcp\"",
+        "--iopub=9009",
+        "--f=C:\\Users\\g728v562\\AppData\\Local\\Temp\\tmp-10124C8LIlGhModSu.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "host": "JB-247-3918L5",
+    "username": "g728v562",
+    "executable": "f:\\Lab\\env\\Scripts\\python.exe"
+}

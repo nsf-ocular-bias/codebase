@@ -1,0 +1,748 @@
+
+(env) F:\Lab\nfs\base-ndiris0405>python runner.py 
+2021-11-29 09:40:40.807764: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudart64_110.dll
+2021-11-29 09:40:51.542624: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-29 09:40:51.551306: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library nvcuda.dll
+2021-11-29 09:40:52.216032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:40:52.216139: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:40:52.216177: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudart64_110.dll
+2021-11-29 09:40:52.232493: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublas64_11.dll
+2021-11-29 09:40:52.232557: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublasLt64_11.dll
+2021-11-29 09:40:52.242224: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cufft64_10.dll
+2021-11-29 09:40:52.246600: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library curand64_10.dll
+2021-11-29 09:40:52.269591: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cusolver64_11.dll
+2021-11-29 09:40:52.277075: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cusparse64_11.dll
+2021-11-29 09:40:52.279331: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudnn64_8.dll
+2021-11-29 09:40:52.279451: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:40:52.989353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:40:52.989391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:40:52.989397: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:40:52.989402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:40:52.989589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:40:52.990895: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:From F:\Lab\nfs\base-ndiris0405\main.py:20: The name tf.keras.backend.set_session is deprecated. Please use tf.compat.v1.keras.backend.set_session instead.
+
+2021-11-29 09:40:53.479982: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:40:53.480014: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:40:53.480096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:40:53.480415: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:40:53.480440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:40:53.480469: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:40:53.480540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:40:53.480545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:40:53.480550: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:40:53.480554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:40:53.480651: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:40:53.480682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+WARNING:tensorflow:From F:\Lab\env\lib\site-packages\tensorflow\python\ops\array_ops.py:5043: calling gather (from tensorflow.python.ops.array_ops) with validate_indices is deprecated and will be removed in a future version.
+Instructions for updating:
+The `validate_indices` argument has no effect. Indices are always validated on CPU and never validated on GPU.
+2021-11-29 09:41:05.296088: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-29 09:41:14.978860: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudnn64_8.dll
+2021-11-29 09:41:15.323300: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8202
+2021-11-29 09:41:15.882118: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8202
+2021-11-29 09:41:16.552775: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublas64_11.dll
+2021-11-29 09:41:17.390438: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublasLt64_11.dll
+EfficientNetB4_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\EfficientNetB4_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'EfficientNetB4_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'EfficientNetB4', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\EfficientNetB4_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+efficientnetb4 (Functional)  (None, 6, 7, 1792)        17673823  
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1792)              0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              1836032   
+_________________________________________________________________
+batch_normalization (BatchNo (None, 1024)              4096      
+_________________________________________________________________
+dropout (Dropout)            (None, 1024)              0         
+_________________________________________________________________
+activation (Activation)      (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 19,514,976
+Trainable params: 1,839,105
+Non-trainable params: 17,675,871
+_________________________________________________________________
+True
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+efficientnetb4 (Functional)  (None, 6, 7, 1792)        17673823  
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1792)              0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              1836032   
+_________________________________________________________________
+batch_normalization (BatchNo (None, 1024)              4096      
+_________________________________________________________________
+dropout (Dropout)            (None, 1024)              0         
+_________________________________________________________________
+activation (Activation)      (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 19,514,976
+Trainable params: 19,387,721
+Non-trainable params: 127,255
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\EfficientNetB4_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\04225\\04225d752.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04934\\04934d106.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04904\\04904d408.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04482\\04482d1164.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04347\\04347d1240.png' 0
+Image shape:  (168, 224, 3)
+Label:  1
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 1:25 - loss: 0.2268 - accuracy: 0.94142/7 [=======>......................] - ETA: 1s - loss: 0.2218 - accuracy: 0.9453  3/7 [===========>..................] - ETA: 0s - loss: 0.2120 - accuracy: 0.94924/7 [================>.............] - ETA: 0s - loss: 0.2426 - accuracy: 0.94635/7 [====================>.........] - ETA: 0s - loss: 0.2397 - accuracy: 0.94386/7 [========================>.....] - ETA: 0s - loss: 0.2336 - accuracy: 0.94607/7 [==============================] - ETA: 0s - loss: 0.2279 - accuracy: 0.94737/7 [==============================] - 16s 356ms/step - loss: 0.2279 - accuracy: 0.9473
+2021-11-29 09:41:22.579012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:41:22.579145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:41:22.579186: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:41:22.579260: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:41:22.579267: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:41:22.579272: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:41:22.579278: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:41:22.579464: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:41:22.579496: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+DenseNet121_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\DenseNet121_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'DenseNet121_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'DenseNet121', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\DenseNet121_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+densenet121 (Functional)     (None, 5, 7, 1024)        7037504   
+_________________________________________________________________
+global_average_pooling2d_1 ( (None, 1024)              0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1024)              1049600   
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 1024)              4096      
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_1 (Activation)    (None, 1024)              0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 8,092,225
+Trainable params: 1,052,673
+Non-trainable params: 7,039,552
+_________________________________________________________________
+True
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+densenet121 (Functional)     (None, 5, 7, 1024)        7037504   
+_________________________________________________________________
+global_average_pooling2d_1 ( (None, 1024)              0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1024)              1049600   
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 1024)              4096      
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_1 (Activation)    (None, 1024)              0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 8,092,225
+Trainable params: 8,006,529
+Non-trainable params: 85,696
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\DenseNet121_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\04537\\04537d890.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04327\\04327d945.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04758\\04758d217.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04815\\04815d664.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04609\\04609d230.png' 1
+Image shape:  (168, 224, 3)
+Label:  1
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 59s - loss: 0.1949 - accuracy: 0.94922/7 [=======>......................] - ETA: 0s - loss: 0.2166 - accuracy: 0.9453 3/7 [===========>..................] - ETA: 0s - loss: 0.2244 - accuracy: 0.94404/7 [================>.............] - ETA: 0s - loss: 0.2109 - accuracy: 0.94635/7 [====================>.........] - ETA: 0s - loss: 0.2047 - accuracy: 0.94926/7 [========================>.....] - ETA: 0s - loss: 0.2006 - accuracy: 0.94927/7 [==============================] - ETA: 0s - loss: 0.1956 - accuracy: 0.95057/7 [==============================] - 12s 363ms/step - loss: 0.1956 - accuracy: 0.9505
+2021-11-29 09:41:45.437077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:41:45.437184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:41:45.437265: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:41:45.437399: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:41:45.437413: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:41:45.437424: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:41:45.437435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:41:45.437719: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:41:45.437781: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not in [96, 128, 160, 192, 224]. Weights for input shape (224, 224) will be loaded as the default.
+MobileNetV2_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\MobileNetV2_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'MobileNetV2_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'MobileNetV2', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\MobileNetV2_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential_2"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+mobilenetv2_1.00_224 (Functi (None, 6, 7, 1280)        2257984   
+_________________________________________________________________
+global_average_pooling2d_2 ( (None, 1280)              0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 1024)              1311744   
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 1024)              4096      
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_2 (Activation)    (None, 1024)              0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 3,574,849
+Trainable params: 1,314,817
+Non-trainable params: 2,260,032
+_________________________________________________________________
+True
+Model: "sequential_2"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+mobilenetv2_1.00_224 (Functi (None, 6, 7, 1280)        2257984   
+_________________________________________________________________
+global_average_pooling2d_2 ( (None, 1280)              0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 1024)              1311744   
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 1024)              4096      
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_2 (Activation)    (None, 1024)              0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 3,574,849
+Trainable params: 3,538,689
+Non-trainable params: 36,160
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\MobileNetV2_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\04904\\04904d332.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04821\\04821d533.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04512\\04512d1239.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04301\\04301d844.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04461\\04461d800.png' 1
+Image shape:  (168, 224, 3)
+Label:  1
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 34s - loss: 0.4610 - accuracy: 0.91022/7 [=======>......................] - ETA: 0s - loss: 0.4873 - accuracy: 0.9062 3/7 [===========>..................] - ETA: 0s - loss: 0.4858 - accuracy: 0.90764/7 [================>.............] - ETA: 0s - loss: 0.4741 - accuracy: 0.91315/7 [====================>.........] - ETA: 0s - loss: 0.5133 - accuracy: 0.90626/7 [========================>.....] - ETA: 0s - loss: 0.5054 - accuracy: 0.90567/7 [==============================] - ETA: 0s - loss: 0.5005 - accuracy: 0.90487/7 [==============================] - 7s 138ms/step - loss: 0.5005 - accuracy: 0.9048
+2021-11-29 09:41:58.480754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:41:58.480808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:41:58.481020: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:41:58.481261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:41:58.481287: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:41:58.481305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:41:58.481323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:41:58.481682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:41:58.481745: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+InceptionV3_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\InceptionV3_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'InceptionV3_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'InceptionV3', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\InceptionV3_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential_3"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+inception_v3 (Functional)    (None, 3, 5, 2048)        21802784  
+_________________________________________________________________
+global_average_pooling2d_3 ( (None, 2048)              0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 1024)              2098176   
+_________________________________________________________________
+batch_normalization_97 (Batc (None, 1024)              4096      
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_97 (Activation)   (None, 1024)              0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 23,906,081
+Trainable params: 2,101,249
+Non-trainable params: 21,804,832
+_________________________________________________________________
+True
+Model: "sequential_3"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+inception_v3 (Functional)    (None, 3, 5, 2048)        21802784  
+_________________________________________________________________
+global_average_pooling2d_3 ( (None, 2048)              0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 1024)              2098176   
+_________________________________________________________________
+batch_normalization_97 (Batc (None, 1024)              4096      
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_97 (Activation)   (None, 1024)              0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 23,906,081
+Trainable params: 23,869,601
+Non-trainable params: 36,480
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\InceptionV3_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\04531\\04531d837.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04349\\04349d1048.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04856\\04856d147.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04730\\04730d979.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04427\\04427d620.png' 0
+Image shape:  (168, 224, 3)
+Label:  1
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 50s - loss: 0.2596 - accuracy: 0.90622/7 [=======>......................] - ETA: 0s - loss: 0.2555 - accuracy: 0.9121 3/7 [===========>..................] - ETA: 0s - loss: 0.2915 - accuracy: 0.90624/7 [================>.............] - ETA: 0s - loss: 0.2789 - accuracy: 0.90825/7 [====================>.........] - ETA: 0s - loss: 0.2704 - accuracy: 0.91026/7 [========================>.....] - ETA: 0s - loss: 0.2739 - accuracy: 0.90957/7 [==============================] - ETA: 0s - loss: 0.2772 - accuracy: 0.90927/7 [==============================] - 10s 279ms/step - loss: 0.2772 - accuracy: 0.9092
+2021-11-29 09:42:16.657752: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:42:16.657816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:42:16.657983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:42:16.658103: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:42:16.658115: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:42:16.658125: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:42:16.658139: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:42:16.658402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:42:16.658458: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+InceptionResNetV2_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\InceptionResNetV2_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'InceptionResNetV2_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'InceptionResNetV2', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\InceptionResNetV2_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential_4"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+inception_resnet_v2 (Functio (None, 3, 5, 1536)        54336736  
+_________________________________________________________________
+global_average_pooling2d_4 ( (None, 1536)              0         
+_________________________________________________________________
+dense_8 (Dense)              (None, 1024)              1573888   
+_________________________________________________________________
+batch_normalization_301 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_301 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_9 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 55,915,745
+Trainable params: 1,576,961
+Non-trainable params: 54,338,784
+_________________________________________________________________
+True
+Model: "sequential_4"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+inception_resnet_v2 (Functio (None, 3, 5, 1536)        54336736  
+_________________________________________________________________
+global_average_pooling2d_4 ( (None, 1536)              0         
+_________________________________________________________________
+dense_8 (Dense)              (None, 1024)              1573888   
+_________________________________________________________________
+batch_normalization_301 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_301 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_9 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 55,915,745
+Trainable params: 55,853,153
+Non-trainable params: 62,592
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\InceptionResNetV2_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\02463\\02463d1298.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04626\\04626d538.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04684\\04684d863.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04768\\04768d747.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04681\\04681d181.png' 0
+Image shape:  (168, 224, 3)
+Label:  1
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 1:13 - loss: 0.5171 - accuracy: 0.89452/7 [=======>......................] - ETA: 1s - loss: 0.4340 - accuracy: 0.8984  3/7 [===========>..................] - ETA: 1s - loss: 0.4158 - accuracy: 0.90104/7 [================>.............] - ETA: 0s - loss: 0.4127 - accuracy: 0.90145/7 [====================>.........] - ETA: 0s - loss: 0.4345 - accuracy: 0.90006/7 [========================>.....] - ETA: 0s - loss: 0.3912 - accuracy: 0.90627/7 [==============================] - ETA: 0s - loss: 0.4069 - accuracy: 0.90297/7 [==============================] - 14s 320ms/step - loss: 0.4069 - accuracy: 0.9029
+2021-11-29 09:42:46.153145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:42:46.153185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:42:46.153226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:42:46.153294: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:42:46.153300: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:42:46.153305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:42:46.153310: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:42:46.153493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:42:46.153521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+ResNet50_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\ResNet50_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'ResNet50_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'ResNet50', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\ResNet50_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential_5"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+resnet50 (Functional)        (None, 6, 7, 2048)        23587712  
+_________________________________________________________________
+global_average_pooling2d_5 ( (None, 2048)              0         
+_________________________________________________________________
+dense_10 (Dense)             (None, 1024)              2098176   
+_________________________________________________________________
+batch_normalization_302 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_302 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_11 (Dense)             (None, 1)                 1025      
+=================================================================
+Total params: 25,691,009
+Trainable params: 2,101,249
+Non-trainable params: 23,589,760
+_________________________________________________________________
+True
+Model: "sequential_5"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+resnet50 (Functional)        (None, 6, 7, 2048)        23587712  
+_________________________________________________________________
+global_average_pooling2d_5 ( (None, 2048)              0         
+_________________________________________________________________
+dense_10 (Dense)             (None, 1024)              2098176   
+_________________________________________________________________
+batch_normalization_302 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_302 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_11 (Dense)             (None, 1)                 1025      
+=================================================================
+Total params: 25,691,009
+Trainable params: 25,635,841
+Non-trainable params: 55,168
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\ResNet50_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\04213\\04213d368.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04917\\04917d610.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04917\\04917d604.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04202\\04202d1110.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04560\\04560d704.png' 1
+Image shape:  (168, 224, 3)
+Label:  0
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 43s - loss: 0.3329 - accuracy: 0.90622/7 [=======>......................] - ETA: 0s - loss: 0.3253 - accuracy: 0.9180 3/7 [===========>..................] - ETA: 0s - loss: 0.3037 - accuracy: 0.92324/7 [================>.............] - ETA: 0s - loss: 0.2788 - accuracy: 0.92385/7 [====================>.........] - ETA: 0s - loss: 0.3404 - accuracy: 0.91726/7 [========================>.....] - ETA: 0s - loss: 0.3626 - accuracy: 0.91417/7 [==============================] - ETA: 0s - loss: 0.3625 - accuracy: 0.91437/7 [==============================] - 8s 210ms/step - loss: 0.3625 - accuracy: 0.9143
+2021-11-29 09:43:00.889672: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:43:00.889769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:43:00.889894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:43:00.890089: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:43:00.890108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:43:00.890123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:43:00.890137: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:43:00.890488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:43:00.890580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+VGG19_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\VGG19_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'VGG19_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'VGG19', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\VGG19_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential_6"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+vgg19 (Functional)           (None, 5, 7, 512)         20024384  
+_________________________________________________________________
+global_average_pooling2d_6 ( (None, 512)               0         
+_________________________________________________________________
+dense_12 (Dense)             (None, 1024)              525312    
+_________________________________________________________________
+batch_normalization_303 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_303 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_13 (Dense)             (None, 1)                 1025      
+=================================================================
+Total params: 20,554,817
+Trainable params: 528,385
+Non-trainable params: 20,026,432
+_________________________________________________________________
+True
+Model: "sequential_6"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+vgg19 (Functional)           (None, 5, 7, 512)         20024384  
+_________________________________________________________________
+global_average_pooling2d_6 ( (None, 512)               0         
+_________________________________________________________________
+dense_12 (Dense)             (None, 1024)              525312    
+_________________________________________________________________
+batch_normalization_303 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_303 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_13 (Dense)             (None, 1)                 1025      
+=================================================================
+Total params: 20,554,817
+Trainable params: 20,552,769
+Non-trainable params: 2,048
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\VGG19_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\04409\\04409d168.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04446\\04446d675.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04917\\04917d954.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04883\\04883d579.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04569\\04569d749.png' 0
+Image shape:  (168, 224, 3)
+Label:  0
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 1:15 - loss: 0.1312 - accuracy: 0.96482/7 [=======>......................] - ETA: 0s - loss: 0.1481 - accuracy: 0.9473  3/7 [===========>..................] - ETA: 0s - loss: 0.1869 - accuracy: 0.93624/7 [================>.............] - ETA: 0s - loss: 0.1787 - accuracy: 0.93655/7 [====================>.........] - ETA: 0s - loss: 0.1607 - accuracy: 0.94146/7 [========================>.....] - ETA: 0s - loss: 0.1645 - accuracy: 0.93957/7 [==============================] - ETA: 0s - loss: 0.1730 - accuracy: 0.93847/7 [==============================] - 16s 521ms/step - loss: 0.1730 - accuracy: 0.9384
+2021-11-29 09:43:19.624192: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:43:19.624284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:43:19.624464: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:43:19.624664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:43:19.624686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:43:19.624703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:43:19.624720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:43:19.625134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:43:19.625230: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+Xception_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\Xception_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'Xception_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'Xception', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\Xception_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential_7"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+xception (Functional)        (None, 6, 7, 2048)        20861480  
+_________________________________________________________________
+global_average_pooling2d_7 ( (None, 2048)              0         
+_________________________________________________________________
+dense_14 (Dense)             (None, 1024)              2098176   
+_________________________________________________________________
+batch_normalization_308 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_304 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_15 (Dense)             (None, 1)                 1025      
+=================================================================
+Total params: 22,964,777
+Trainable params: 2,101,249
+Non-trainable params: 20,863,528
+_________________________________________________________________
+True
+Model: "sequential_7"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+xception (Functional)        (None, 6, 7, 2048)        20861480  
+_________________________________________________________________
+global_average_pooling2d_7 ( (None, 2048)              0         
+_________________________________________________________________
+dense_14 (Dense)             (None, 1024)              2098176   
+_________________________________________________________________
+batch_normalization_308 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_7 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_304 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_15 (Dense)             (None, 1)                 1025      
+=================================================================
+Total params: 22,964,777
+Trainable params: 22,908,201
+Non-trainable params: 56,576
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\Xception_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\04719\\04719d675.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04714\\04714d790.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04847\\04847d740.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04633\\04633d948.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04868\\04868d124.png' 1
+Image shape:  (168, 224, 3)
+Label:  1
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 39s - loss: 0.6012 - accuracy: 0.83202/7 [=======>......................] - ETA: 0s - loss: 0.5870 - accuracy: 0.8223 3/7 [===========>..................] - ETA: 0s - loss: 0.6379 - accuracy: 0.81384/7 [================>.............] - ETA: 0s - loss: 0.6478 - accuracy: 0.80965/7 [====================>.........] - ETA: 0s - loss: 0.6203 - accuracy: 0.81416/7 [========================>.....] - ETA: 0s - loss: 0.6105 - accuracy: 0.81517/7 [==============================] - ETA: 0s - loss: 0.6072 - accuracy: 0.81597/7 [==============================] - 8s 249ms/step - loss: 0.6072 - accuracy: 0.8159
+2021-11-29 09:43:33.654504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:43:33.654610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-11-29 09:43:33.654733: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-11-29 09:43:33.654932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-11-29 09:43:33.654953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-11-29 09:43:33.654970: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-11-29 09:43:33.654986: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-11-29 09:43:33.655360: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-11-29 09:43:33.655536: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+EfficientNetB0_Notredame_right_aug_gender_finetuned_F50M50
+F:\Lab\nfs\base-ndiris0405\checkpoints\EfficientNetB0_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Running... {'run_id': 'EfficientNetB0_Notredame_right_aug_gender_finetuned_F50M50', 'model': 'EfficientNetB0', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'viz_method': 'gen_data', 'test_mode': 2, 'test_dataset': 'unab_', 'fine-tune': True, 'ratio': 'F50M50', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base-ndiris0405\\checkpoints\\EfficientNetB0_Notredame_right_aug_gender_finetuned_F50M50.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'right', 'image_height': 168, 'image_width': 224, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'eval_dir': 'F:\\Lab\\datasets\\nd-iris\\data', 'labels': 'F:\\Lab\\datasets\\nd-iris\\\\', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential_8"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+efficientnetb0 (Functional)  (None, 6, 7, 1280)        4049571   
+_________________________________________________________________
+global_average_pooling2d_8 ( (None, 1280)              0         
+_________________________________________________________________
+dense_16 (Dense)             (None, 1024)              1311744   
+_________________________________________________________________
+batch_normalization_309 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_8 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_305 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_17 (Dense)             (None, 1)                 1025      
+=================================================================
+Total params: 5,366,436
+Trainable params: 1,314,817
+Non-trainable params: 4,051,619
+_________________________________________________________________
+True
+Model: "sequential_8"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+efficientnetb0 (Functional)  (None, 6, 7, 1280)        4049571   
+_________________________________________________________________
+global_average_pooling2d_8 ( (None, 1280)              0         
+_________________________________________________________________
+dense_16 (Dense)             (None, 1024)              1311744   
+_________________________________________________________________
+batch_normalization_309 (Bat (None, 1024)              4096      
+_________________________________________________________________
+dropout_8 (Dropout)          (None, 1024)              0         
+_________________________________________________________________
+activation_305 (Activation)  (None, 1024)              0         
+_________________________________________________________________
+dense_17 (Dense)             (None, 1)                 1025      
+=================================================================
+Total params: 5,366,436
+Trainable params: 5,322,365
+Non-trainable params: 44,071
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base-ndiris0405\checkpoints\EfficientNetB0_Notredame_right_aug_gender_finetuned_F50M50.hdf5
+Male : 17829, Female: 15853
+Male : 1642, Female: 1575
+Male : 0, Female: 1575
+b'F:\\Lab\\datasets\\nd-iris\\data\\04488\\04488d1219.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04409\\04409d205.png' 0
+b'F:\\Lab\\datasets\\nd-iris\\data\\04816\\04816d098.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04560\\04560d674.png' 1
+b'F:\\Lab\\datasets\\nd-iris\\data\\04449\\04449d348.png' 1
+Image shape:  (168, 224, 3)
+Label:  0
+Train Size : 33682
+Validation Size : 3217
+Test Size : 1575
+1/7 [===>..........................] - ETA: 38s - loss: 0.2966 - accuracy: 0.90232/7 [=======>......................] - ETA: 0s - loss: 0.3107 - accuracy: 0.8965 3/7 [===========>..................] - ETA: 0s - loss: 0.3319 - accuracy: 0.88934/7 [================>.............] - ETA: 0s - loss: 0.3189 - accuracy: 0.88485/7 [====================>.........] - ETA: 0s - loss: 0.3225 - accuracy: 0.88136/7 [========================>.....] - ETA: 0s - loss: 0.3166 - accuracy: 0.88357/7 [==============================] - ETA: 0s - loss: 0.3177 - accuracy: 0.88387/7 [==============================] - 7s 158ms/step - loss: 0.3177 - accuracy: 0.8838

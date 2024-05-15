@@ -1,0 +1,915 @@
+2021-10-13 00:01:27,868 INFO    MainThread:30240 [internal.py:wandb_internal():86] W&B internal server running at pid: 30240, started at: 2021-10-13 00:01:27.860963
+2021-10-13 00:01:27,869 INFO    WriterThread:30240 [datastore.py:open_for_write():77] open: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\run-112g3upd.wandb
+2021-10-13 00:01:27,870 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: check_version
+2021-10-13 00:01:27,879 DEBUG   SenderThread:30240 [sender.py:send():182] send: header
+2021-10-13 00:01:27,879 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: check_version
+2021-10-13 00:01:27,940 DEBUG   SenderThread:30240 [sender.py:send():182] send: run
+2021-10-13 00:01:27,955 DEBUG   SenderThread:30240 [git.py:repo():33] git repository is invalid
+2021-10-13 00:01:28,189 INFO    SenderThread:30240 [dir_watcher.py:__init__():169] watching files in: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files
+2021-10-13 00:01:28,189 INFO    SenderThread:30240 [sender.py:_start_run_threads():740] run started: 112g3upd with start time 1634101286
+2021-10-13 00:01:28,189 DEBUG   SenderThread:30240 [sender.py:send():182] send: summary
+2021-10-13 00:01:28,190 INFO    SenderThread:30240 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-13 00:01:28,191 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: run_start
+2021-10-13 00:01:29,194 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_created():217] file/dir created: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\wandb-summary.json
+2021-10-13 00:01:31,808 DEBUG   HandlerThread:30240 [meta.py:__init__():40] meta init
+2021-10-13 00:01:31,808 DEBUG   HandlerThread:30240 [meta.py:__init__():54] meta init done
+2021-10-13 00:01:31,808 DEBUG   HandlerThread:30240 [meta.py:probe():211] probe
+2021-10-13 00:01:31,827 DEBUG   HandlerThread:30240 [git.py:repo():33] git repository is invalid
+2021-10-13 00:01:31,827 DEBUG   HandlerThread:30240 [meta.py:_save_pip():58] save pip
+2021-10-13 00:01:31,830 DEBUG   HandlerThread:30240 [meta.py:_save_pip():72] save pip done
+2021-10-13 00:01:31,830 DEBUG   HandlerThread:30240 [meta.py:probe():249] probe done
+2021-10-13 00:01:31,855 DEBUG   SenderThread:30240 [sender.py:send():182] send: files
+2021-10-13 00:01:31,855 INFO    SenderThread:30240 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-10-13 00:01:31,864 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:01:31,864 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:01:31,994 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: log_artifact
+2021-10-13 00:01:31,995 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: log_artifact
+2021-10-13 00:01:32,202 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: pause
+2021-10-13 00:01:32,202 INFO    HandlerThread:30240 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-13 00:01:32,214 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_created():217] file/dir created: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\output.log
+2021-10-13 00:01:32,215 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_created():217] file/dir created: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\requirements.txt
+2021-10-13 00:01:32,215 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_created():217] file/dir created: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\wandb-metadata.json
+2021-10-13 00:01:32,215 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_created():217] file/dir created: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\media\table\visob_f50m50_0_54a091acd2b411785db7.table.json
+2021-10-13 00:01:32,215 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_created():217] file/dir created: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\media\table
+2021-10-13 00:01:32,215 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_created():217] file/dir created: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\media
+2021-10-13 00:01:32,306 INFO    Thread-15 :30240 [upload_job.py:push():137] Uploaded file C:\Users\g728v562\AppData\Local\Temp\tmpvzckb3fswandb\3r34jxvw-wandb-metadata.json
+2021-10-13 00:01:32,709 INFO    Thread-17 :30240 [upload_job.py:push():95] Uploaded file C:\Users\g728v562\.cache\wandb\artifacts\obj\md5\a1\9faed0751fd724286f1584117ab6bd
+2021-10-13 00:01:33,400 DEBUG   SenderThread:30240 [sender.py:send():182] send: files
+2021-10-13 00:01:33,400 INFO    SenderThread:30240 [sender.py:_save_file():873] saving file media\table\visob_f50m50_0_54a091acd2b411785db7.table.json with policy now
+2021-10-13 00:01:33,402 DEBUG   SenderThread:30240 [sender.py:send():182] send: history
+2021-10-13 00:01:33,402 DEBUG   SenderThread:30240 [sender.py:send():182] send: summary
+2021-10-13 00:01:33,406 INFO    SenderThread:30240 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-13 00:01:33,407 DEBUG   SenderThread:30240 [sender.py:send():182] send: stats
+2021-10-13 00:01:33,799 INFO    Thread-18 :30240 [upload_job.py:push():137] Uploaded file C:\Users\g728v562\AppData\Local\Temp\tmpvzckb3fswandb\361y5c2u-media/table/visob_f50m50_0_54a091acd2b411785db7.table.json
+2021-10-13 00:01:34,229 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_modified():230] file/dir modified: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\wandb-summary.json
+2021-10-13 00:01:46,992 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:01:46,992 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:02:02,119 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:02:02,119 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:02:17,251 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:02:17,252 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:02:32,376 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:02:32,377 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:02:47,498 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:02:47,498 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:03:02,605 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:03:02,606 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:03:17,713 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:03:17,713 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:03:32,820 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:03:32,820 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:03:47,931 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:03:47,932 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:04:03,053 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:04:03,053 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:04:18,208 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:04:18,208 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:04:33,326 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:04:33,327 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:04:48,480 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:04:48,480 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:05:03,635 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:05:03,635 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:05:18,767 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:05:18,767 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:05:33,892 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:05:33,892 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:05:49,039 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:05:49,039 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:06:04,146 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:06:04,147 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:06:19,258 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:06:19,258 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:06:34,414 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:06:34,414 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:06:49,537 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:06:49,538 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:07:04,651 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:07:04,651 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:07:19,784 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:07:19,785 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:07:34,892 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:07:34,892 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:07:50,015 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:07:50,015 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:08:05,141 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 00:08:05,141 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 00:08:11,654 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: resume
+2021-10-13 00:08:11,654 INFO    HandlerThread:30240 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-13 00:08:12,129 DEBUG   SenderThread:30240 [sender.py:send():182] send: telemetry
+2021-10-13 00:08:12,130 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-13 00:08:12,130 DEBUG   SenderThread:30240 [sender.py:send():182] send: exit
+2021-10-13 00:08:12,130 INFO    SenderThread:30240 [sender.py:send_exit():291] handling exit code: 0
+2021-10-13 00:08:12,131 INFO    SenderThread:30240 [sender.py:send_exit():293] handling runtime: 4
+2021-10-13 00:08:12,132 INFO    SenderThread:30240 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-13 00:08:12,133 INFO    SenderThread:30240 [sender.py:send_exit():303] send defer
+2021-10-13 00:08:12,133 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: poll_exit
+2021-10-13 00:08:12,134 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: defer
+2021-10-13 00:08:12,134 INFO    HandlerThread:30240 [handler.py:handle_request_defer():143] handle defer: 0
+2021-10-13 00:08:12,134 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: defer
+2021-10-13 00:08:12,134 INFO    SenderThread:30240 [sender.py:send_request_defer():312] handle sender defer: 0
+2021-10-13 00:08:12,134 INFO    SenderThread:30240 [sender.py:transition_state():316] send defer: 1
+2021-10-13 00:08:12,134 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: defer
+2021-10-13 00:08:12,134 INFO    HandlerThread:30240 [handler.py:handle_request_defer():143] handle defer: 1
+2021-10-13 00:08:12,216 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: defer
+2021-10-13 00:08:12,216 INFO    SenderThread:30240 [sender.py:send_request_defer():312] handle sender defer: 1
+2021-10-13 00:08:12,216 INFO    SenderThread:30240 [sender.py:transition_state():316] send defer: 2
+2021-10-13 00:08:12,217 DEBUG   SenderThread:30240 [sender.py:send():182] send: stats
+2021-10-13 00:08:12,217 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: defer
+2021-10-13 00:08:12,217 INFO    HandlerThread:30240 [handler.py:handle_request_defer():143] handle defer: 2
+2021-10-13 00:08:12,218 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: defer
+2021-10-13 00:08:12,218 INFO    SenderThread:30240 [sender.py:send_request_defer():312] handle sender defer: 2
+2021-10-13 00:08:12,218 INFO    SenderThread:30240 [sender.py:transition_state():316] send defer: 3
+2021-10-13 00:08:12,218 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: defer
+2021-10-13 00:08:12,218 INFO    HandlerThread:30240 [handler.py:handle_request_defer():143] handle defer: 3
+2021-10-13 00:08:12,218 DEBUG   SenderThread:30240 [sender.py:send():182] send: summary
+2021-10-13 00:08:12,220 INFO    SenderThread:30240 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-13 00:08:12,220 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: defer
+2021-10-13 00:08:12,220 INFO    SenderThread:30240 [sender.py:send_request_defer():312] handle sender defer: 3
+2021-10-13 00:08:12,220 INFO    SenderThread:30240 [sender.py:transition_state():316] send defer: 4
+2021-10-13 00:08:12,221 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: defer
+2021-10-13 00:08:12,221 INFO    HandlerThread:30240 [handler.py:handle_request_defer():143] handle defer: 4
+2021-10-13 00:08:12,221 DEBUG   SenderThread:30240 [sender.py:send_request():196] send_request: defer
+2021-10-13 00:08:12,221 INFO    SenderThread:30240 [sender.py:send_request_defer():312] handle sender defer: 4
+2021-10-13 00:08:12,236 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-13 00:08:12,330 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:08:12,330 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:08:12,649 INFO    Thread-12 :30240 [dir_watcher.py:_on_file_modified():230] file/dir modified: f:\Lab\nfs\base-visob\wandb\run-20211013_000121-112g3upd\files\wandb-summary.json
+2021-10-13 00:08:13,697 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:08:13,697 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:08:16,211 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:08:16,211 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:08:16,212 ERROR   SenderThread:30240 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "f:\Lab\env\lib\site-packages\wandb\sdk\lib\retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "f:\Lab\env\lib\site-packages\wandb\sdk\internal\internal_api.py", line 136, in execute
+    six.reraise(*sys.exc_info())
+  File "f:\Lab\env\lib\site-packages\six.py", line 703, in reraise
+    raise value
+  File "f:\Lab\env\lib\site-packages\wandb\sdk\internal\internal_api.py", line 130, in execute
+    return self.client.execute(*args, **kwargs)
+  File "f:\Lab\env\lib\site-packages\wandb\vendor\gql-0.2.0\gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "f:\Lab\env\lib\site-packages\wandb\vendor\gql-0.2.0\gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "f:\Lab\env\lib\site-packages\wandb\vendor\gql-0.2.0\gql\transport\requests.py", line 39, in execute
+    request.raise_for_status()
+  File "f:\Lab\env\lib\site-packages\requests\models.py", line 943, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+2021-10-13 00:08:17,361 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-13 00:08:20,509 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:08:20,510 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:08:22,481 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-13 00:08:27,593 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-13 00:08:30,317 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:08:30,317 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:08:32,704 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-13 00:08:37,829 DEBUG   HandlerThread:30240 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-13 00:08:49,458 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:08:49,458 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:09:28,517 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:09:28,517 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:10:41,049 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:10:41,049 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:12:58,988 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:12:58,988 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:18:17,854 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:18:17,854 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:24:32,201 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:24:32,201 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:29:40,333 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:29:40,333 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:35:33,878 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:35:33,878 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:41:21,183 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:41:21,184 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:47:00,091 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:47:00,091 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:52:12,363 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:52:12,363 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 00:57:45,226 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 00:57:45,226 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:03:41,466 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:03:41,466 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:09:26,912 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:09:26,912 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:14:42,319 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:14:42,319 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:20:02,953 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:20:02,953 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:25:35,455 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:25:35,455 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:31:22,728 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:31:22,728 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:37:22,715 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:37:22,715 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:43:27,361 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:43:27,361 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:49:00,210 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:49:00,210 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:54:14,954 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:54:14,954 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 01:59:39,840 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 01:59:39,840 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:05:44,409 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:05:44,409 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:11:36,999 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:11:36,999 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:17:40,842 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:17:40,842 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:22:58,724 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:22:58,724 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:28:44,192 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:28:44,193 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:34:43,891 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:34:43,891 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:39:59,544 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:39:59,544 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:45:49,286 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:45:49,287 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:51:21,324 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:51:21,324 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 02:57:31,080 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 02:57:31,081 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:03:02,537 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:03:02,538 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:09:04,106 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:09:04,106 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:14:20,830 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:14:20,831 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:20:12,166 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:20:12,166 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:25:20,489 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:25:20,489 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:31:09,634 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:31:09,634 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:36:53,344 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:36:53,345 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:42:14,263 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:42:14,263 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:47:45,524 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:47:45,524 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:53:34,447 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:53:34,447 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 03:59:06,099 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 03:59:06,100 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:05:10,509 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:05:10,509 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:11:19,398 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:11:19,399 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:16:34,160 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:16:34,160 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:22:29,928 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:22:29,928 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:27:42,784 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:27:42,784 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:33:39,430 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:33:39,431 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:39:39,560 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:39:39,560 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:45:09,092 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:45:09,093 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:51:13,518 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:51:13,518 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 04:57:03,644 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 04:57:03,644 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:02:32,115 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:02:32,115 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:07:37,410 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:07:37,410 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:12:58,246 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:12:58,246 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:18:02,978 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:18:02,979 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:23:38,699 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:23:38,699 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:29:35,552 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:29:35,552 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:35:40,068 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:35:40,069 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:41:35,366 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:41:35,366 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:46:52,507 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:46:52,507 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:52:48,935 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:52:48,935 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 05:58:34,953 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 05:58:34,953 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:04:07,127 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:04:07,127 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:09:17,018 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:09:17,018 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:14:28,983 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:14:28,984 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:19:46,882 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:19:46,882 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:25:57,212 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:25:57,212 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:31:20,763 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:31:20,763 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:36:25,789 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:36:25,789 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:42:09,462 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:42:09,462 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:47:50,206 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:47:50,207 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:53:46,728 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:53:46,728 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 06:59:26,517 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 06:59:26,517 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:04:31,172 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:04:31,172 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:09:40,175 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:09:40,175 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:15:23,985 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:15:23,986 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:21:10,144 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:21:10,144 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:26:43,516 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:26:43,516 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:32:16,272 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:32:16,273 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:37:59,408 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:37:59,408 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:43:33,480 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:43:33,480 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:49:35,685 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:49:35,685 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 07:55:03,611 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 07:55:03,611 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:00:48,222 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:00:48,222 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:06:16,045 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:06:16,045 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:12:11,351 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:12:11,352 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:17:51,670 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:17:51,670 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:23:37,081 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:23:37,081 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:29:31,804 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:29:31,804 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:34:44,040 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:34:44,040 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:40:27,696 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:40:27,696 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:46:28,259 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:46:28,259 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:52:28,350 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:52:28,351 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 08:58:36,017 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 08:58:36,017 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:04:37,643 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:04:37,643 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:10:42,320 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:10:42,320 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:16:08,023 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:16:08,023 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:22:10,464 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:22:10,464 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:27:22,354 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:27:22,355 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:33:30,789 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:33:30,790 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:38:41,883 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:38:41,883 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:44:28,771 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:44:28,771 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:50:22,397 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:50:22,397 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 09:56:15,625 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 09:56:15,625 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:02:21,907 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:02:21,907 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:07:53,207 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:07:53,207 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:13:56,597 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:13:56,597 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:20:11,736 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:20:11,736 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:25:56,513 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:25:56,513 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:31:08,769 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:31:08,769 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:36:30,981 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:36:30,982 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:42:17,859 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:42:17,859 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:47:18,189 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:47:18,190 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:53:04,940 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:53:04,941 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 10:58:09,364 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 10:58:09,364 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:03:52,040 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:03:52,040 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:09:41,520 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:09:41,520 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:15:08,953 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:15:08,953 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:21:01,157 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:21:01,158 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:26:56,226 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:26:56,226 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:33:04,300 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:33:04,300 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:39:09,680 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:39:09,680 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:45:15,555 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:45:15,555 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:50:40,611 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:50:40,611 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 11:56:02,722 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 11:56:02,722 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:02:05,932 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:02:05,933 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:07:13,859 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:07:13,860 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:12:54,980 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:12:54,980 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:18:33,145 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:18:33,145 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:23:58,907 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:23:58,907 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:29:23,785 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:29:23,786 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:35:16,736 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:35:16,737 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:40:50,410 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:40:50,411 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:45:54,495 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:45:54,495 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:51:04,597 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:51:04,597 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 12:57:00,589 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 12:57:00,589 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:03:11,647 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:03:11,647 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:08:51,287 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:08:51,288 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:13:54,677 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:13:54,677 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:19:21,965 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:19:21,966 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:24:48,635 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:24:48,635 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:30:16,311 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:30:16,311 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:35:28,999 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:35:29,000 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:41:33,797 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:41:33,797 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:47:24,867 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:47:24,867 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:53:39,718 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:53:39,719 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 13:59:08,364 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 13:59:08,364 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:04:56,513 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:04:56,513 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:10:26,528 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:10:26,528 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:15:44,137 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:15:44,137 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:20:51,407 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:20:51,407 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:26:02,371 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:26:02,371 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:31:51,595 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:31:51,595 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:37:37,637 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:37:37,637 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:43:25,649 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:43:25,650 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:49:31,473 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:49:31,473 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 14:54:47,038 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 14:54:47,039 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:00:32,103 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:00:32,104 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:06:17,174 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:06:17,175 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:12:17,860 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:12:17,861 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:17:40,383 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:17:40,383 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:22:46,224 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:22:46,224 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:28:15,506 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:28:15,506 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:33:59,079 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:33:59,079 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:40:11,398 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:40:11,398 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:45:26,190 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:45:26,190 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:50:59,524 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:50:59,525 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 15:56:05,876 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 15:56:05,876 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:01:48,901 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:01:48,901 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:07:02,259 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:07:02,260 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:12:41,550 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:12:41,551 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:18:39,352 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:18:39,352 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:24:27,050 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:24:27,050 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:29:38,712 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:29:38,712 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:34:41,108 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:34:41,108 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:40:54,584 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:40:54,584 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:46:47,359 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:46:47,359 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:52:41,430 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:52:41,430 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 16:58:38,406 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 16:58:38,406 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:04:07,571 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:04:07,571 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:10:13,176 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:10:13,176 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:15:33,744 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:15:33,745 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:21:15,920 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:21:15,920 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:26:54,413 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:26:54,414 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:32:11,502 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:32:11,503 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:38:14,808 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:38:14,808 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:43:39,053 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:43:39,053 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:48:54,249 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:48:54,249 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:54:18,262 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:54:18,262 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 17:59:56,387 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 17:59:56,387 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:05:46,027 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:05:46,027 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:11:18,210 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:11:18,211 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:16:48,858 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:16:48,859 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:22:38,892 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:22:38,892 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:27:49,414 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:27:49,415 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:33:18,402 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:33:18,403 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:39:20,759 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:39:20,760 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:45:18,909 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:45:18,910 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:50:56,602 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:50:56,603 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 18:56:30,281 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 18:56:30,281 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:02:38,071 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:02:38,072 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:08:27,958 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:08:27,958 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:14:29,415 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:14:29,415 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:20:32,008 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:20:32,009 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:26:46,359 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:26:46,360 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:32:10,841 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:32:10,841 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:38:23,737 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:38:23,738 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:44:32,147 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:44:32,148 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:49:33,355 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:49:33,355 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 19:55:15,371 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 19:55:15,371 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:00:22,618 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:00:22,618 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:05:24,055 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:05:24,055 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:10:59,618 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:10:59,619 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:16:18,788 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:16:18,788 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:21:42,526 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:21:42,526 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:27:43,705 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:27:43,705 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:32:47,096 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:32:47,096 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:38:48,872 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:38:48,872 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:44:34,373 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:44:34,374 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:49:35,617 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:49:35,618 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 20:54:48,346 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 20:54:48,347 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:00:52,727 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:00:52,727 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:06:07,058 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:06:07,058 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:11:45,888 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:11:45,889 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:17:57,074 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:17:57,074 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:23:10,370 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:23:10,370 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:28:55,546 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:28:55,547 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:35:03,180 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:35:03,180 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:40:50,028 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:40:50,028 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:46:06,875 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:46:06,876 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:51:26,499 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:51:26,499 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 21:57:00,852 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 21:57:00,852 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:03:03,637 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:03:03,637 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:09:02,529 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:09:02,530 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:14:45,295 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:14:45,296 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:19:52,108 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:19:52,108 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:25:05,917 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:25:05,917 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:30:24,586 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:30:24,587 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:36:16,084 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:36:16,085 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:42:23,612 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:42:23,613 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:47:57,023 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:47:57,024 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:53:06,756 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:53:06,757 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 22:58:10,015 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 22:58:10,015 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:03:54,071 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:03:54,071 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:09:41,515 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:09:41,515 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:15:34,451 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:15:34,451 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:20:48,838 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:20:48,838 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:26:04,545 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:26:04,545 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:31:59,638 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:31:59,638 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:37:03,915 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:37:03,915 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:42:44,479 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:42:44,479 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:48:58,879 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:48:58,880 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-13 23:54:54,045 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-13 23:54:54,045 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:00:11,306 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:00:11,306 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:06:16,972 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:06:16,972 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:12:07,901 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:12:07,901 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:17:47,257 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:17:47,257 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:23:05,873 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:23:05,874 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:29:06,243 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:29:06,243 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:35:06,071 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:35:06,072 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:41:04,543 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:41:04,544 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:47:00,897 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:47:00,898 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:52:07,077 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:52:07,078 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 00:57:15,287 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 00:57:15,287 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:03:01,381 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:03:01,382 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:08:26,506 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:08:26,507 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:14:00,734 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:14:00,735 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:19:29,297 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:19:29,297 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:24:35,456 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:24:35,457 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:30:29,194 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:30:29,194 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:36:28,540 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:36:28,540 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:42:26,848 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:42:26,848 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:47:45,750 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:47:45,750 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:53:09,581 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:53:09,581 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 01:58:52,069 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 01:58:52,069 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:04:33,850 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:04:33,850 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:10:07,732 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:10:07,732 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:16:12,352 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:16:12,352 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:21:38,726 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:21:38,726 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:26:50,266 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:26:50,266 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:32:22,568 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:32:22,568 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:37:50,814 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:37:50,815 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:43:07,572 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:43:07,573 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:48:19,577 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:48:19,577 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 02:54:23,557 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 02:54:23,558 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:00:36,533 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:00:36,534 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:06:33,992 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:06:33,993 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:12:28,741 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:12:28,741 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:17:58,926 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:17:58,926 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:23:29,259 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:23:29,260 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:29:14,842 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:29:14,842 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:35:07,242 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:35:07,242 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:40:50,427 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:40:50,428 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:46:10,445 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:46:10,446 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:51:46,719 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:51:46,719 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 03:57:58,413 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 03:57:58,413 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:03:01,635 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:03:01,636 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:09:12,354 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:09:12,354 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:14:36,417 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:14:36,418 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:20:32,113 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:20:32,113 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:26:23,611 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:26:23,611 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:32:18,079 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:32:18,080 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:37:52,621 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:37:52,621 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:43:13,881 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:43:13,882 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:48:27,651 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:48:27,651 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 04:54:40,598 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 04:54:40,598 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:00:48,455 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:00:48,456 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:06:01,713 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:06:01,713 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:11:16,713 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:11:16,714 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:16:29,852 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:16:29,853 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:22:04,263 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:22:04,264 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:28:04,867 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:28:04,867 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:33:11,620 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:33:11,620 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:39:12,682 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:39:12,682 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:45:20,976 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:45:20,976 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:51:02,228 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:51:02,228 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 05:56:20,660 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 05:56:20,660 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:01:25,990 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:01:25,991 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:07:14,787 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:07:14,787 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:12:43,181 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:12:43,181 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:18:27,801 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:18:27,801 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:23:40,732 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:23:40,733 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:29:35,198 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:29:35,198 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:35:18,642 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:35:18,642 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:41:29,796 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:41:29,796 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:47:00,451 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:47:00,451 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:52:49,363 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:52:49,364 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 06:58:08,363 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 06:58:08,364 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:03:57,468 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:03:57,469 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:09:56,687 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:09:56,688 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:15:26,692 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:15:26,693 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:20:40,754 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:20:40,755 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:26:03,007 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:26:03,007 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:31:19,345 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:31:19,346 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:36:44,780 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:36:44,781 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:42:10,072 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:42:10,072 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:47:35,230 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:47:35,230 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:53:09,881 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:53:09,881 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 07:58:59,339 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 07:58:59,339 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:04:44,372 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:04:44,372 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:10:50,665 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:10:50,666 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:16:54,187 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:16:54,187 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:22:51,764 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:22:51,764 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:29:06,302 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:29:06,302 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:34:46,219 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:34:46,219 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:40:58,743 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:40:58,743 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:47:08,019 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:47:08,019 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:52:35,059 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:52:35,060 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 08:58:10,851 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 08:58:10,852 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:03:40,869 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:03:40,869 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:09:21,106 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:09:21,106 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:15:07,544 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:15:07,545 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:20:52,204 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:20:52,205 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:26:39,725 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:26:39,725 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:31:53,095 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:31:53,095 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:37:18,690 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:37:18,690 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:42:42,293 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:42:42,293 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:48:35,782 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:48:35,782 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:53:56,541 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:53:56,541 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 09:59:27,714 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 09:59:27,714 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:05:09,863 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:05:09,864 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:10:14,206 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:10:14,206 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:16:06,511 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:16:06,512 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:22:05,761 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:22:05,761 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:27:46,138 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:27:46,138 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:33:02,676 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:33:02,676 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:38:14,821 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:38:14,821 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:43:35,163 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:43:35,164 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:49:15,832 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:49:15,833 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2021-10-14 10:54:57,047 ERROR   SenderThread:30240 [internal_api.py:execute():133] 409 response executing GraphQL.
+2021-10-14 10:54:57,048 ERROR   SenderThread:30240 [internal_api.py:execute():134] {"errors":[{"message":"Error 1062: Duplicate entry '447627-112g3upd' for key 'PRIMARY'","path":["upsertBucket"]}],"data":{"upsertBucket":null}}

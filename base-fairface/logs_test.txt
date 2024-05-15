@@ -1,0 +1,1125 @@
+
+(env) F:\Lab\nfs\base>python runner.py 
+2021-09-23 14:49:20.835854: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudart64_110.dll
+2021-09-23 14:49:27.618442: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-09-23 14:49:27.623247: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library nvcuda.dll
+2021-09-23 14:49:28.214903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-09-23 14:49:28.215003: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-09-23 14:49:28.215043: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudart64_110.dll
+2021-09-23 14:49:28.226888: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublas64_11.dll
+2021-09-23 14:49:28.226926: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublasLt64_11.dll
+2021-09-23 14:49:28.233065: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cufft64_10.dll
+2021-09-23 14:49:28.235852: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library curand64_10.dll
+2021-09-23 14:49:28.248036: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cusolver64_11.dll
+2021-09-23 14:49:28.253387: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cusparse64_11.dll
+2021-09-23 14:49:28.255474: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudnn64_8.dll
+2021-09-23 14:49:28.255575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-09-23 14:49:29.023317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-09-23 14:49:29.023346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-09-23 14:49:29.023352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-09-23 14:49:29.023357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-09-23 14:49:29.023557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-09-23 14:49:29.025013: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:From F:\Lab\nfs\base\main.py:15: The name tf.keras.backend.set_session is deprecated. Please use tf.compat.v1.keras.backend.set_session instead.
+
+2021-09-23 14:49:29.393425: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-09-23 14:49:29.393457: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-09-23 14:49:29.393543: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-09-23 14:49:29.393927: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-09-23 14:49:29.393955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 1 with properties: 
+pciBusID: 0000:65:00.0 name: Quadro RTX 6000 computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 24.00GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-09-23 14:49:29.393987: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0, 1
+2021-09-23 14:49:29.394062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-09-23 14:49:29.394068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 1 
+2021-09-23 14:49:29.394074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N Y 
+2021-09-23 14:49:29.394079: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 1:   Y N 
+2021-09-23 14:49:29.394185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22053 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:17:00.0, compute capability: 7.5)
+2021-09-23 14:49:29.394215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22053 MB memory) -> physical GPU (device: 1, name: Quadro RTX 6000, pci bus id: 0000:65:00.0, compute capability: 7.5)
+WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
+EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25
+['F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.01-0.3261.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.01-0.3747.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.02-0.2731.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.03-0.2417.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.04-0.2286.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.05-0.2252.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.06-0.2194.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.07-0.2110.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.08-0.2074.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.15-0.2006.hdf5', 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.18-0.2005.hdf5']
+Running... {'run_id': 'EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25', 'model': 'EfficientNetB4', 'class': 'gender', 'allow_growth': True, 'mode': 'test', 'test_mode': 1, 'fine-tune': True, 'ratio': 'F75M25', 'fold': '1', 'optimizer': {'name': 'adam', 'initial_learning_rate': 0.0003, 'lr_scheduler': 'none', 'first_decay_steps': 1000, 'decay_rate': 0.9}, 'train': {'batch_size': 256, 'gpu': [0, 1], 'epochs': 100, 'unfreeze_epoch': 1000, 'steps_per_batch': 100, 'validation_split': 0.2, 'buffer_size': 1024, 'ckpt_dir': 'F:\\Lab\\nfs\\base\\checkpoints', 'pretrained': False, 'pretrained_weight': 'F:\\Lab\\nfs\\base\\checkpoints\\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.18-0.2005.hdf5', 'pretrained_epoch': 15}, 'input': {'type': 'aligned', 'image_height': 256, 'image_width': 512, 'channels': 3, 'train_dir': 'F:\\Lab\\datasets\\UFPR-Periocular\\UFPR-Periocular', 'eval_dir': 'F:\\Lab\\datasets\\UFPR-Periocular\\UFPR-Periocular', 'labels': 'F:\\Lab\\datasets\\UFPR-Periocular\\UFPR-Periocular\\experimentalProtocol\\open_world_valopen', 'randaugment': True, 'randaugment_layers': 2, 'randaugment_magnitude': 12}}
+Number of devices: 2
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+efficientnetb4 (Functional)  (None, 8, 16, 1792)       17673823  
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1792)              0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              1836032   
+_________________________________________________________________
+batch_normalization (BatchNo (None, 1024)              4096      
+_________________________________________________________________
+dropout (Dropout)            (None, 1024)              0         
+_________________________________________________________________
+activation (Activation)      (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 19,514,976
+Trainable params: 1,839,105
+Non-trainable params: 17,675,871
+_________________________________________________________________
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+efficientnetb4 (Functional)  (None, 8, 16, 1792)       17673823  
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1792)              0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              1836032   
+_________________________________________________________________
+batch_normalization (BatchNo (None, 1024)              4096      
+_________________________________________________________________
+dropout (Dropout)            (None, 1024)              0         
+_________________________________________________________________
+activation (Activation)      (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 19,514,976
+Trainable params: 19,387,721
+Non-trainable params: 127,255
+_________________________________________________________________
+Loading weights : F:\Lab\nfs\base\checkpoints\EfficientNetB4_UFPR_aligned_aug_gender_finetuned_F75M25.18-0.2005.hdf5
+F:\Lab\datasets\UFPR-Periocular\UFPR-Periocular\experimentalProtocol\open_world_valopen\train_fold1*
+[                     0    1  2  3  4    5
+0      C0001S1I01L.jpg    0  3  1  1    6
+1      C0001S1I01R.jpg    1  3  1  0    6
+2      C0001S1I02L.jpg    0  3  1  1    6
+3      C0001S1I02R.jpg    1  3  1  0    6
+4      C0001S1I03L.jpg    0  3  1  1    6
+...                ...  ... .. .. ..  ...
+14995  C0500S3I13R.jpg  999  7  0  0  124
+14996  C0500S3I14L.jpg  998  7  0  1  124
+14997  C0500S3I14R.jpg  999  7  0  0  124
+14998  C0500S3I15L.jpg  998  7  0  1  124
+14999  C0500S3I15R.jpg  999  7  0  0  124
+
+[15000 rows x 6 columns]]
+                     0    1  2  3  4    5
+10949  C0365S3I15R.jpg  729  0  0  0   62
+6619   C0221S2I10R.jpg  441  7  0  0  123
+5634   C0188S3I13L.jpg  374  3  0  1  115
+9125   C0305S1I03R.jpg  609  5  1  0   25
+8801   C0294S2I06R.jpg  587  2  1  0   48
+Male : 2140, Female: 6420
+F:\Lab\datasets\UFPR-Periocular\UFPR-Periocular\experimentalProtocol\open_world_valopen\val_fold1*
+[                    0     1  2  3  4   5
+0     C0501S1I01L.jpg  1000  0  1  1   4
+1     C0501S1I01R.jpg  1001  0  1  0   4
+2     C0501S1I02L.jpg  1000  0  1  1   4
+3     C0501S1I02R.jpg  1001  0  1  0   4
+4     C0501S1I03L.jpg  1000  0  1  1   4
+...               ...   ... .. .. ..  ..
+7435  C0748S3I13R.jpg  1495  0  0  0  61
+7436  C0748S3I14L.jpg  1494  0  0  1  61
+7437  C0748S3I14R.jpg  1495  0  0  0  61
+7438  C0748S3I15L.jpg  1494  0  0  1  61
+7439  C0748S3I15R.jpg  1495  0  0  0  61
+
+[7440 rows x 6 columns]]
+                    0     1  2  3  4    5
+7438  C0748S3I15L.jpg  1494  0  0  1   61
+1272  C0543S2I07L.jpg  1084  6  0  1  173
+7393  C0747S2I07R.jpg  1493  0  1  0  102
+2285  C0577S1I03R.jpg  1153  3  0  0   10
+5299  C0677S2I10R.jpg  1353  5  0  0  182
+Male : 1210, Female: 3630
+F:\Lab\datasets\UFPR-Periocular\UFPR-Periocular\experimentalProtocol\open_world_valopen\test_fold1*
+[                     0     1  2  3  4    5
+0      C0749S1I01L.jpg  1496  0  1  1  135
+1      C0749S1I01R.jpg  1497  0  1  0  135
+2      C0749S1I02L.jpg  1496  0  1  1  135
+3      C0749S1I02R.jpg  1497  0  1  0  135
+4      C0749S1I03L.jpg  1496  0  1  1  135
+...                ...   ... .. .. ..  ...
+11215  C1122S3I13R.jpg  2243  5  0  0   52
+11216  C1122S3I14L.jpg  2242  5  0  1   52
+11217  C1122S3I14R.jpg  2243  5  0  0   52
+11218  C1122S3I15L.jpg  2242  5  0  1   52
+11219  C1122S3I15R.jpg  2243  5  0  0   52
+
+[11220 rows x 6 columns]]
+                     0     1  2  3  4    5
+5724   C0939S3I13L.jpg  1876  6  1  1   20
+9984   C1081S3I13L.jpg  2160  5  0  1  120
+9763   C1074S2I07R.jpg  2147  0  1  0  123
+10027  C1083S1I04R.jpg  2165  4  0  0   96
+6900   C0979S1I01L.jpg  1956  0  1  1  176
+Male : 5670, Female: 0
+b'F:\\Lab\\datasets\\UFPR-Periocular\\UFPR-Periocular\\aligned\\C0028S2I10.jpg' 1
+b'F:\\Lab\\datasets\\UFPR-Periocular\\UFPR-Periocular\\aligned\\C0059S1I04.jpg' 1
+b'F:\\Lab\\datasets\\UFPR-Periocular\\UFPR-Periocular\\aligned\\C0349S2I10.jpg'WARNING:tensorflow:From F:\Lab\env\lib\site-packages\tensorflow\python\ops\array_ops.py:5043: calling gather (from tensorflow.python.ops.array_ops) with validate_indices is deprecated and will be removed in a future version.
+Instructions for updating:
+The `validate_indices` argument has no effect. Indices are always validated on CPU and never validated on GPU.
+2021-09-23 14:49:45.872090: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-09-23 14:49:58.511451: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudnn64_8.dll
+2021-09-23 14:49:59.101292: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8202
+2021-09-23 14:49:59.739625: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8202
+2021-09-23 14:50:00.410692: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublas64_11.dll
+2021-09-23 14:50:01.247561: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublasLt64_11.dll
+ 0
+b'F:\\Lab\\datasets\\UFPR-Periocular\\UFPR-Periocular\\aligned\\C0468S1I04.jpg' 1
+b'F:\\Lab\\datasets\\UFPR-Periocular\\UFPR-Periocular\\aligned\\C0238S3I15.jpg' 0
+Image shape:  (256, 512, 3)
+Label:  1
+Train Size : 11688
+Validation Size : 1712
+Test Size : 5670
+
+ 1/23 [>.............................] - ETA: 7:14 - loss: 0.4432 - accuracy: 0.8789
+ 2/23 [=>............................] - ETA: 13s - loss: 0.4819 - accuracy: 0.8770 
+ 3/23 [==>...........................] - ETA: 13s - loss: 0.4877 - accuracy: 0.8737
+ 4/23 [====>.........................] - ETA: 12s - loss: 0.4467 - accuracy: 0.8809
+ 5/23 [=====>........................] - ETA: 12s - loss: 0.4427 - accuracy: 0.8813
+ 6/23 [======>.......................] - ETA: 11s - loss: 0.4375 - accuracy: 0.8841
+ 7/23 [========>.....................] - ETA: 10s - loss: 0.4231 - accuracy: 0.8890
+ 8/23 [=========>....................] - ETA: 11s - loss: 0.4347 - accuracy: 0.8896
+ 9/23 [==========>...................] - ETA: 11s - loss: 0.4500 - accuracy: 0.8863
+10/23 [============>.................] - ETA: 10s - loss: 0.4493 - accuracy: 0.8855
+11/23 [=============>................] - ETA: 9s - loss: 0.4578 - accuracy: 0.8828 
+12/23 [==============>...............] - ETA: 8s - loss: 0.4556 - accuracy: 0.8841
+13/23 [===============>..............] - ETA: 8s - loss: 0.4509 - accuracy: 0.8852
+14/23 [=================>............] - ETA: 7s - loss: 0.4620 - accuracy: 0.8842
+15/23 [==================>...........] - ETA: 6s - loss: 0.4653 - accuracy: 0.8839
+16/23 [===================>..........] - ETA: 5s - loss: 0.4656 - accuracy: 0.8831
+17/23 [=====================>........] - ETA: 4s - loss: 0.4641 - accuracy: 0.8849
+18/23 [======================>.......] - ETA: 3s - loss: 0.4569 - accuracy: 0.8861
+19/23 [=======================>......] - ETA: 3s - loss: 0.4572 - accuracy: 0.8863
+20/23 [=========================>....] - ETA: 2s - loss: 0.4548 - accuracy: 0.8863
+21/23 [==========================>...] - ETA: 1s - loss: 0.4536 - accuracy: 0.8862
+22/23 [===========================>..] - ETA: 0s - loss: 0.4471 - accuracy: 0.8876
+23/23 [==============================] - ETA: 0s - loss: 0.4466 - accuracy: 0.8875
+23/23 [==============================] - 37s 784ms/step - loss: 0.4466 - accuracy: 0.8875
+  0%|          | 0/23 [00:00<?, ?it/s]2021-09-23 14:50:24.082495: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_53228"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+  4%|4         | 1/23 [00:08<03:12,  8.74s/it]2021-09-23 14:50:32.730826: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_61841"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+  9%|8         | 2/23 [00:10<01:31,  4.34s/it]2021-09-23 14:50:33.987840: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_63039"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 13%|#3        | 3/23 [00:11<00:58,  2.95s/it]2021-09-23 14:50:35.277185: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_64237"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 17%|#7        | 4/23 [00:12<00:43,  2.30s/it]2021-09-23 14:50:36.583627: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_65435"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 22%|##1       | 5/23 [00:13<00:34,  1.94s/it]2021-09-23 14:50:37.875541: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_66633"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 26%|##6       | 6/23 [00:15<00:29,  1.72s/it]2021-09-23 14:50:39.174121: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_67831"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 30%|###       | 7/23 [00:16<00:24,  1.56s/it]2021-09-23 14:50:40.397550: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_69029"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 35%|###4      | 8/23 [00:17<00:21,  1.46s/it]2021-09-23 14:50:41.656307: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_70227"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 39%|###9      | 9/23 [00:18<00:19,  1.41s/it]2021-09-23 14:50:42.932361: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_71425"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 43%|####3     | 10/23 [00:20<00:17,  1.36s/it]2021-09-23 14:50:44.202306: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_72623"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 48%|####7     | 11/23 [00:21<00:16,  1.35s/it]2021-09-23 14:50:45.535275: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_73821"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 52%|#####2    | 12/23 [00:22<00:14,  1.33s/it]2021-09-23 14:50:46.801775: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_75019"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 57%|#####6    | 13/23 [00:24<00:13,  1.32s/it]2021-09-23 14:50:48.107504: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_76217"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 61%|######    | 14/23 [00:25<00:11,  1.31s/it]2021-09-23 14:50:49.398131: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_77415"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 65%|######5   | 15/23 [00:26<00:10,  1.31s/it]2021-09-23 14:50:50.694477: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_78613"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 70%|######9   | 16/23 [00:28<00:09,  1.30s/it]2021-09-23 14:50:51.995609: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_79811"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 74%|#######3  | 17/23 [00:29<00:07,  1.31s/it]2021-09-23 14:50:53.322655: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_81009"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 78%|#######8  | 18/23 [00:30<00:06,  1.32s/it]2021-09-23 14:50:54.680173: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_82207"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 83%|########2 | 19/23 [00:31<00:05,  1.32s/it]2021-09-23 14:50:55.993295: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_83405"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 87%|########6 | 20/23 [00:34<00:04,  1.65s/it]2021-09-23 14:50:58.384606: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_84603"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 91%|#########1| 21/23 [00:35<00:03,  1.53s/it]2021-09-23 14:50:59.639907: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_85801"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 32
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+ 96%|#########5| 22/23 [00:36<00:01,  1.45s/it]2021-09-23 14:51:00.736011: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:695] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+op: "FlatMapDataset"
+input: "PrefetchDataset/_8"
+attr {
+  key: "Targuments"
+  value {
+    list {
+    }
+  }
+}
+attr {
+  key: "f"
+  value {
+    func {
+      name: "__inference_Dataset_flat_map_slice_batch_indices_86132"
+    }
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: -1
+        }
+      }
+    }
+  }
+}
+attr {
+  key: "output_types"
+  value {
+    list {
+      type: DT_INT64
+    }
+  }
+}
+. Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
+100%|##########| 23/23 [00:44<00:00,  3.21s/it]100%|##########| 23/23 [00:44<00:00,  1.92s/it]
+5670 Traceback (most recent call last):
+  File "runner.py", line 93, in <module>
+    run()
+  File "runner.py", line 59, in run
+    main.main()
+  File "F:\Lab\nfs\base\main.py", line 45, in main
+    _model.test_model()
+  File "F:\Lab\nfs\base\model.py", line 178, in test_model
+    auc = roc_auc_score(y_true, y_pred)
+  File "F:\Lab\env\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "F:\Lab\env\lib\site-packages\sklearn\metrics\_ranking.py", line 542, in roc_auc_score
+    return _average_binary_score(partial(_binary_roc_auc_score,
+  File "F:\Lab\env\lib\site-packages\sklearn\metrics\_base.py", line 77, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+  File "F:\Lab\env\lib\site-packages\sklearn\metrics\_ranking.py", line 327, in _binary_roc_auc_score
+    raise ValueError("Only one class present in y_true. ROC AUC score "
+ValueError: Only one class present in y_true. ROC AUC score is not defined in that case.
