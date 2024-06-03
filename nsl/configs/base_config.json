@@ -1,0 +1,63 @@
+{
+    "model": {
+        "model_name": "tf_efficientnetv2_m",
+        "survival_prob": 0.8,
+        "num_classes": 2,
+        "num_race_classes": 7,
+        "num_age_classes": 9,
+        "resume": null,
+        "evidential": false,
+        "multitask": false,
+        "multitask_age": false,
+        "multitask_aware": false,
+        "nsl": false,
+        "use_clip_encoder": false,
+        "use_blip_encoder": false,
+        "nsl_neighbor_weight": 2,
+        "nsl_distance": "jsdiv",
+        "finetuning": false,
+        "lazy_regularization": 2
+    },
+    "train": {
+        "batch_size": 256,
+        "num_epochs": 100,
+        "optimizer": "rmsprop",
+        "momentum": 0.9,
+        "stages": 5,
+        "min_steps": 0,
+        "lr_sched": "exponential",
+        "lr_base": 4e-4,
+        "lr_decay_epoch": 2.4,
+        "lr_step_size": 30,
+        "lr_decay_factor": 0.97,
+        "lr_warmup_epoch": 5,
+        "lr_min": 0,
+        "ema_decay": 0.9999,
+        "swa": false,
+        "weight_decay": 1e-5,
+        "label_smoothing": 0.1,
+        "gclip": 0,
+        "log_dir": "training-run",
+        "data_reweighting": false
+    },
+    "eval": {
+        "batch_size": 256
+    },
+    "data": {
+        "ds_name": "fairface",
+        "augmentation": "randaugment",
+        "randaugment_n": 2,
+        "randaugment_m": 9,
+        "mixup_alpha": 0,
+        "cutmix_beta": 1,
+        "cutmix_prob": 0.0,
+        "ibase": 128,
+        "num_classes": 2,
+        "validation_split": 0.2,
+        "neighbor_size": 7
+    },
+    "runtime": {
+        "num_workers": 3,
+        "mixed_precision": true
+    }
+}

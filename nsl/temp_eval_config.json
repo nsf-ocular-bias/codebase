@@ -1,0 +1,59 @@
+{
+    "data": {
+        "augmentation": "randaugment",
+        "cutmix_beta": 1,
+        "cutmix_prob": 0.0,
+        "ds_name": "fairface",
+        "ibase": 128,
+        "mixup_alpha": 0,
+        "neighbor_size": 7,
+        "num_classes": 2,
+        "randaugment_m": 9,
+        "randaugment_n": 2,
+        "validation_split": 0.2
+    },
+    "eval": {
+        "batch_size": 256
+    },
+    "model": {
+        "evidential": false,
+        "finetuning": false,
+        "model_name": "tf_efficientnetv2_m",
+        "multitask": false,
+        "multitask_age": false,
+        "multitask_aware": false,
+        "nsl": false,
+        "nsl_distance": "l2",
+        "nsl_neighbor_weight": 0.02,
+        "num_classes": 2,
+        "num_race_classes": 7,
+        "resume": null,
+        "survival_prob": 0.8,
+        "use_clip_encoder": false
+    },
+    "runtime": {
+        "mixed_precision": true,
+        "num_workers": 3
+    },
+    "train": {
+        "batch_size": 128,
+        "data_reweighting": false,
+        "ema_decay": 0.9999,
+        "gclip": 0,
+        "label_smoothing": 0.1,
+        "log_dir": "training-run",
+        "lr_base": 0.0003,
+        "lr_decay_epoch": 2.4,
+        "lr_decay_factor": 0.97,
+        "lr_min": 0,
+        "lr_sched": "exponential",
+        "lr_step_size": 30,
+        "lr_warmup_epoch": 5,
+        "min_steps": 0,
+        "momentum": 0.9,
+        "num_epochs": 100,
+        "optimizer": "rmsprop",
+        "stages": 5,
+        "weight_decay": 1e-05
+    }
+}

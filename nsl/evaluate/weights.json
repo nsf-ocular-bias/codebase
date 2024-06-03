@@ -1,0 +1,13 @@
+{
+    "baseline": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_104\\checkpoints\\epoch=58-val_std=2.0966.ckpt",
+    "mt": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_105\\checkpoints\\epoch=76-val_std=1.9868.ckpt",
+    "mt_nsl": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_106\\checkpoints\\epoch=8-val_std=1.8177.ckpt",
+    "mt_nsl_edl": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_108\\checkpoints\\epoch=67-val_std=1.7028.ckpt",
+    "nsl": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_122\\checkpoints\\epoch=42-val_std=1.9463.ckpt",
+
+    "df_mt_nsl": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_166\\checkpoints\\epoch=83-val_std=0.1827.ckpt",
+    "df_baseline": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_168\\checkpoints\\epoch=66-val_std=0.2486.ckpt",
+
+    "clip_lp": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_183\\checkpoints\\epoch=43-val_std=1.1185.ckpt",
+    "clip_nsl": "F:\\Lab\\nfs\\nsl\\training-run\\lightning_logs\\version_188\\checkpoints\\epoch=38-val_std=1.0888.ckpt"
+}
